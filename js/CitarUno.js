@@ -37,7 +37,7 @@ async function verificar() {
 async function generarcod() {
 
     if (numerosGenerados.size === rangoMaximo - rangoMinimo + 1) {
-        alert("Se han generado todos los números en el rango.");
+        
         return;
     }
     let numeroAleatorio;
@@ -47,7 +47,6 @@ async function generarcod() {
         existeEnDB = await existeEnBaseDeDatos(numeroAleatorio);
     } while (numerosGenerados.has(numeroAleatorio) || existeEnDB);
     numerosGenerados.add(numeroAleatorio);
-    console.log(`Número único generado: ${numeroAleatorio}`);
     var docIns = localStorage.getItem("datos"); 
     const docApe = document.getElementById("docApe").value;
     const nomApe = document.getElementById("nomApe").value;
@@ -105,16 +104,40 @@ async function generarcod() {
     });
 
     if (response.ok) {
-        console.log(`Registro  enviado con éxito`);
+        Swal.fire({
+            position: 'center',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            stopKeydownPropagation: true,
+            title: '¡ Éxito !',
+            html: '<b class="texto-alerta"> ¡El aprendiz ha sido citado! </b>',
+            icon: 'success',
+            iconColor: '#0e810e',
+            confirmButtonColor: '#0e810e',
+            timer: 8000
+        });
+        setTimeout(() => {
+            location.href = 'procesosInstructor.html';
+        }, 1000);
     } else {
-        console.error(`Error al enviar registro`);
+        Swal.fire({
+            position: 'center',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            stopKeydownPropagation: true,
+            title: '¡ ERROR !',
+            html: '<b class="texto-alerta"> ¡No se pudo citar al aprendiz, intentelo nuevamente! </b>',
+            icon: 'error',
+            iconColor: '#0e810e',
+            confirmButtonColor: '#0e810e',
+            timer: 8000
+        });
     
 }
-
-console.log('Todos los registros han sido enviados');
-Swal.fire(' ¡Todos los registros han sido enviados! ' , 'success');
-// location.reload();
 };
+
 function GuardarApe(){
     const docApe = document.getElementById("docApe").value;
     const nomApe = document.getElementById("nomApe").value;
@@ -155,8 +178,6 @@ function GuardarApe(){
             }
         }
     }
-
-    console.log(docApe, nomApe, tipoProceso, fecIni, codFic);
     try {
         const response = fetch("http://localhost:8085/apiApe/save", {
             method: "POST",
@@ -171,13 +192,10 @@ function GuardarApe(){
 
                 "Content-Type": "application/json"
             }
-
         })
-        alert(`Registro  enviado con éxito`);
     }
     catch (error) {
         console.error('Error en la solicitud HTTP', error);
-        alert("Error al enviar aprendiz")
         return false; // Hubo un error en la solicitud
     }
 }
@@ -209,10 +227,6 @@ async function existeEnBaseDeDatos(numeroAleatorio) {
 }
 
 const btn = document.getElementById("CitarApe");
-btn.addEventListener("click", function () {
-   
+btn.addEventListener("click", function () { 
     verificar();
-    // GuardarApe();
-    // generarcod();
-    // location.reload();
 });
