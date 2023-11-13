@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src='../js/funciones.js'></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <title>Inicio</title>
+
+</head>
+
+<body>
+  <section class="form-register">
+    <!-- <header>
+      <div class="logo">  <img src="../img/logosena.png" alt="logo del Sena (Gestión Administrativa, Financiera y Contable)">
+    </header> -->
+
+    <center>
+
+      <h4>Seleccione su rol dentro del SENA</h4>
+
+      <select id="roles" class="combo-box" required>
+        <option value="0" disabled selected="">Seleccione...</option>
+        <option value="1">Aprendiz</option>
+        <option value="2">Instructor</option>
+      </select>
+
+      <button id="openLinkButton" onclick="iniciarSesion();">
+        <span> Ingresar </span>
+      </button>
+
+      <footer class="fin-pag">
+        <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
+      </footer>
+      
+    </center>
+
+  </section>
+
+</body>
+
+</html>

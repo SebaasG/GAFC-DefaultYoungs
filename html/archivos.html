@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Citación a aprendices </title>
+
+  <script src='../Ejemplos de Archivos CSV/js/archivo.js'></script>
+
+  <title> Citaciónes a Pruebas </title>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <script src="../js/archivocsv.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+  <div class="form-archivo" id="formar">
+    <!-- <header>
+      <div class="logoApe">
+        <img src="../img/logosena.png" alt="Logo del Sena (Gestión Administrativa, Financiera y Contable)">
+    </header> -->
+
+    <center>
+
+      <div class="file">
+        <h1> Gestión de archivos </h1>
+        <br>
+
+        <h4> Seleccione el archivo el cual quiere subir aquí ↓ </h4>
+
+        <label for="archivo1"> Subir archivo .csv </label>
+        
+        <input class="archivo" type="file" id="archivo1" accept=".csv" />
+
+        <pre id="contenido-archivo"></pre>
+        <hr />
+      </div>
+
+      <div>
+        <select id="cbo-prueba" class="combo-box-prueba" required>
+          <option value="0" disabled selected=""> Seleccione... </option>
+          <option value="1"> Presentar prueba número 1. </option>
+          <option value="2"> Presentar prueba número 2. </option>
+          <option value="3"> Presentar ambas pruebas. </option>
+        </select>
+      </div>
+
+      <button id="hola">
+        <span> Realizar citación </span>
+
+      </button>
+
+    </center>
+
+    <center>
+      <footer class="fin-pag">
+        <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
+      </footer>
+    </center>
+
+  </div>
+
+</body>
+
+</html>

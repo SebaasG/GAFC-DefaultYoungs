@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Sección 2. 9 </title>
+
+    <link rel="stylesheet" href="../css/Style A.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="botonSeccion1" onclick="location.href='SeccionP1.html'">Sección 1</button>
+            <button class="botonSeccion1" onclick="location.href='SeccionP2.html'">Sección 2</button>
+            <button class="botonSeccion1" onclick="location.href='SeccionP3.html'">Sección 3</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP4.html'">Sección 4</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP5.html'">Sección 5</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP6.html'">Sección 6</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP7.html'">Sección 7</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP8.html'">Sección 8</button>
+            <button class="botonSeccion1" onclick="location.href='seccionP9.html'">Sección 9</button>
+
+        </div>
+
+        <div class="section">
+            <ul>
+
+                <!-- Pregunta 169 -->
+                <li>
+                    <p>169. Me gusta esperar a estar seguro de que lo que voy a decir es lo
+                        correcto, antes de exponer mis ideas:</p>
+                    <div class="question">
+                        <span class="question-text">A. Siempre</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Generalmente</span>
+                        <select id="preguntaP169" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Sólo si es posible</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 170 -->
+                <li>
+                    <p>170. Algunas veces me "sacan de quicio" de un modo insoportable pequeñas
+                        cosas, aunque reconozco que son triviales:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP170" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 171 -->
+                <li>
+                    <p>171. No suelo decir, sin pensarlas, cosas que luego lamento mucho:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP171" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 172 -->
+                <li>
+                    <p>172. Si se me pidieran colaborar en una campaña caritativa:</p>
+                    <div class="question">
+                        <span class="question-text">A. Aceptaría</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP172" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Diría cortésmente que estoy muy ocupado</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 173 -->
+                <li>
+                    <p>173. Pronto es a "nunca" como "cerca" es a:</p>
+                    <div class="question">
+                        <span class="question-text">A. En ningún sitio</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Lejos</span>
+                        <select id="preguntaP173" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. En otro sitio</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 174 -->
+                <li>
+                    <p>174. Si cometo una falta social desagradable, puedo olvidarla pronto:</p>
+                    <div class="question">
+                        <span class="question-text">A. Si</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP174" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 175 -->
+                <li>
+                    <p>175. Se me considera un "hombre de ideas" que casi siempre puede apuntar
+                        alguna solución a un problema:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP175" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 176 -->
+                <li>
+                    <p>176. Creo que se me da mejor mostrar:</p>
+                    <div class="question">
+                        <span class="question-text">A. Aplomo en las pugnas y discusiones de una reunión</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP176" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Tolerancia con los deseos de los demás</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 177 -->
+                <li>
+                    <p>177. Me gusta un trabajo que presente cambios, variedad y viajes, aunque
+                        implique algún peligro:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP177" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 178 -->
+                <li>
+                    <p>178. Me gusta un trabajo que requiera dotes de atención y exactitud:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP178" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 179 -->
+                <li>
+                    <p>179. Soy de ese tipo de personas con tanta energía que siempre están ocupadas:</p>
+                    <div class="question">
+                        <span class="question-text">A. Si</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP179" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 180 -->
+                <li>
+                    <p>180. En mi época de estudiante prefería (prefiero):</p>
+                    <div class="question">
+                        <span class="question-text">A. Lengua o Literatura</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP180" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Matemáticas o Aritmética</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 181 -->
+                <li>
+                    <p>181. Algunas veces me ha turbado el que la gente diga a mi espalda cosas
+                        desagradables de mí sin fundamento:</p>
+                    <div class="question">
+                        <span class="question-text">A. Si</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP181" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 182 -->
+                <li>
+                    <p>182. Hablar con personas corrientes, convencionales y rutinarias:</p>
+                    <div class="question">
+                        <span class="question-text">A. Es a menudo muy interesante e instructivo</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP182" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Me fastidia porque no hay profundidad o se trata
+                            de chismes y cosas sin importancia</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 183 -->
+                <li>
+                    <p>183. Algunas cosas me irritan tanto que creo que entonces lo mejor es no hablar:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP183" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 184 -->
+                <li>
+                    <p>184. En la formación del niño, es más importante:</p>
+                    <div class="question">
+                        <span class="question-text">A. Darle bastante afecto</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP184" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Procurar que aprenda hábitos y actitudes deseables</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 185 -->
+                <li>
+                    <p>185. Los demás me consideran una persona firme e imperturbable, impasible
+                        ante los vaivenes de las circunstancias:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP185" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 186 -->
+                <li>
+                    <p>186. Creo que en el mundo actual es más importante resolver:</p>
+                    <div class="question">
+                        <span class="question-text">A. El problema de la intención moral</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP186" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Los problemas políticos</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 187 -->
+                <li>
+                    <p>187. Creo que no me he saltado ninguna cuestión y he contestado a todas de
+                        modo apropiado:</p>
+                    <div class="question">
+                        <span class="question-text">A. Si</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP187" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+                <div>
+                    <button id="SeccionP9" class="next-button">
+                        <span>
+                            <script src="../js/operacionesGuardarp.js"></script>
+                            Finalizar
+                        </span>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

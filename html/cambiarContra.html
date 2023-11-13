@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cambio de Contraseña </title>
+
+    <script src='../js/cambiarContra.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="form-contra">
+        <!-- <header>
+            <div class="logoApe">
+            <img src="../img/logosena.png" alt="logo del Sena (Gestión Administrativa, Financiera y Contable)">
+        </header> -->
+
+        <center>
+            <h4> Documento: </h4>
+            <input type="text" id="docContra" readonly>
+            <h4> Nombre: </h4>
+            <input type="text" id="nomContra">
+
+            <h4> Contraseña: </h4>
+            <input type="text" id="password"> <br>
+
+            <h4> Confirmar Estado: </h4>
+            <select id="estaContra" class="combo-box-contra" required>
+                <option value="0" disabled selected="">Seleccione...</option>
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
+                <option value="3">Admin</option>
+            </select> <br> <br> <br>
+
+            <button id="btnContra" onclick="  validarContraseña()">
+                <span> Actualizar </span>
+            </button>
+
+            <footer class="fin-pag">
+                <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
+            </footer>
+        </center>
+
+    </div>
+</body>
+
+</html>

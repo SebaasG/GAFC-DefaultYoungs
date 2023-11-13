@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Citacion al Aprendiz </title>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head> 
+<body>
+
+  <div class="citacion-ape" id="formape">
+    <!-- <header>
+      <div class="logoApe">
+        <img src="../img/logosena.png" alt="logo del Sena (Gestión Administrativa, Financiera y Contable)">
+    </header> -->
+
+    
+    <br>
+    <center>
+    <h4> Citación al Aprendiz </h4>
+    </center>
+
+    <div class="horizontal-container">
+    <br>
+    <center>
+    <div>
+      <input id="nomApe" type="text" name="nombre" placeholder="Ingrese su nombre" class="nombre-txt">
+    </div>
+    </center>
+
+    <br>
+    <center>
+      <div>
+        <input id="fichaApe" type="number" name="ficha" placeholder="Ingrese su codigo ficha" pattern="[0-9]*" class="codficha-txt">
+      </div>
+    </div>
+      </center>
+
+      <div>
+        <input id="docApe" type="number" name="documento" placeholder="Ingrese su documento" pattern="[0-9]*" class="document-txt">
+      </div>
+
+
+    
+      <div class="tipo-fecha">
+        <h4>Tipo de Programa </h4> 
+        <h4>Fecha de inicio</h4></div>
+    
+    <div class="horizontal-container" class= "tipofecha">
+   
+      <div>
+        <input id="fecIniApe" type="date" name="fechaInicio" class="form-date">
+      </div>
+
+      <div>
+        <select id="cboTipo" class="combo-box-ficha" required>
+          <option value="0" disabled selected="">Selecionar...</option>
+          <option value="1">Tecnico</option>
+          <option value="2">Tecnologo</option>
+          <option value="3">Especializacion</option>
+          <option value="4">Operario</option>
+        </select>
+      </div>
+   
+</div>
+    <br><br>
+
+    <center>
+
+      <center>
+        <h4></h4>
+        </center>
+
+      <div>
+        <select id="cboApePrueba" class="combo-box-prueba" required>
+          <option value="0" disabled selected=""> Seleccione... </option>
+          <option value="1"> Presentar prueba número 1. </option>
+          <option value="2"> Presentar prueba número 2. </option>
+          <option value="3"> Presentar Ambas Pruebas </option>
+        </select>
+      </div>
+
+    </center>
+    <center>
+      <!-- onclick="window.location.href = 'indexprocess.html'"> -->
+      <button id="CitarApe">
+        <span> Guardar </span>
+      </button>
+    </center>
+
+    <center>
+      <footer class="fin-pag">
+          <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
+      </footer>
+    </center>
+  </div>
+  <script src="../js/CitarUno.js"></script>
+</body>
+</html>

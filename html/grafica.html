@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Gráfica</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script src="../js/Grafica.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.71/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.71/vfs_fonts.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<center>
+
+    <body>
+        <div class="chartContainer">
+            <div id="pdfContainer">
+                <canvas id="myChart"></canvas>
+                <script src="../js/Grafica.js"></script>
+
+                <center>
+
+                    <!-- Apartado para la tabla acompañante -->
+                    <table id="tabladatos">
+                        <thead>
+                            <tr>
+                                <th>Factores</th>
+                                <th colspan="2">Decatipos</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Disposición General para la Venta
+                                </td>
+                                <td>
+                                    DGV
+                                </td>
+                                <td id="campo1"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Comprensión
+                                </td>
+                                <td>
+                                    I
+                                </td>
+                                <td id="campo2"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Adaptabilidad
+                                </td>
+                                <td>
+                                    II
+                                </td>
+                                <td id="campo3"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Control de sí mismo
+                                </td>
+                                <td>
+                                    III
+                                </td>
+                                <td id="campo4"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tolerancia a la frustación
+                                </td>
+                                <td>
+                                    IV
+                                </td>
+                                <td id="campo5"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Combatividad
+                                </td>
+                                <td>
+                                    V
+                                </td>
+                                <td id="campo6"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Dominancia
+                                </td>
+                                <td>
+                                    VI
+                                </td>
+                                <td id="campo7"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Seguridad
+                                </td>
+                                <td>
+                                    VII
+                                </td>
+                                <td id="campo8"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Actividad
+                                </td>
+                                <td>
+                                    VIII
+                                </td>
+                                <td id="campo9"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sociabilidad
+                                </td>
+                                <td>
+                                    IX
+                                </td>
+                                <td id="campo10"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Receptividad
+                                </td>
+                                <td>
+                                    R
+                                </td>
+                                <td id="campo11"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agresividad
+                                </td>
+                                <td>
+                                    A
+                                </td>
+                                <td id="campo12"></td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <select id="pruebas" class="combo-box-eleprueba" onchange="llenarGrafica(this)">
+                        <option value="0" disabled selected="">Seleccione...</option>
+                    </select>
+                </center>
+                <!-- <center>
+                <button id="btnPDF">
+                    <span>Descargar PDF</span>
+                </button>
+            </center> -->
+            </div>
+        </div>
+        </div>
+    </body>
+</center>
+
+</html>

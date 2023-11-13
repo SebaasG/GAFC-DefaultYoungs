@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Gráfica selecion 2</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<center>
+
+    <body>
+        <div class="chartContainer">
+            <div id="pdfContainer">
+                <canvas id="myChart"></canvas>
+                <script src="../js/Grafica2.js"></script>
+
+                <center>
+
+                    <!-- Apartado para la tabla acompañante -->
+                    <table id="tabladatos">
+                        <thead>
+                            <tr>
+                                <th>Factores</th>
+                                <th>Decatipos</th>
+                                <th> P.D</th>
+                                <th> P.F</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Reservado / Abierto
+                                </td>
+                                <td>
+                                    A
+                                </td>
+                                <td id="campo1"></td>
+                                <td id="campo1f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Rto. Concreto / Abstracto
+                                </td>
+                                <td>
+                                    B
+                                </td>
+                                <td id="campo2"></td>
+                                <td id="campo2f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Inestabilidad Emoc. / Estabilidad emocional
+                                </td>
+                                <td>
+                                    C
+                                </td>
+                                <td id="campo3"></td>
+                                <td id="campo3f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sumiso / Dominante
+                                </td>
+                                <td>
+                                    E
+                                </td>
+                                <td id="campo4"></td>
+                                <td id="campo4f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Prudente / Impulsivo
+                                </td>
+                                <td>
+                                    F
+                                </td>
+                                <td id="campo5"></td>
+                                <td id="campo5f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Despreocupado / Escrupuloso
+                                </td>
+                                <td>
+                                    G
+                                </td>
+                                <td id="campo6"></td>
+                                <td id="campo6f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Timido / Espontáneo
+                                </td>
+                                <td>
+                                    H
+                                </td>
+                                <td id="campo7"></td>
+                                <td id="campo7f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Racional / Emocional
+                                </td>
+                                <td>
+                                    I
+                                </td>
+                                <td id="campo8"></td>
+                                <td id="campo8f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Confiado / Suspicaz
+                                </td>
+                                <td>
+                                    L
+                                </td>
+                                <td id="campo9"></td>
+                                <td id="campo9f"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Practico / Soñador
+                                </td>
+                                <td>
+                                    M
+            </div>
+            </td>
+            <td id="campo10"></td>
+            <td id="campo10f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Sencillo / Astuto
+                </td>
+                <td>
+                    N
+                </td>
+                <td id="campo11"></td>
+                <td id="campo11f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Seguro / Inseguro
+                </td>
+                <td>
+                    O
+                </td>
+                <td id="campo12"></td>
+                <td id="campo12f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Tradicionalista / Innovador
+                </td>
+                <td>
+                    Q1
+                </td>
+                <td id="campo13"></td>
+                <td id="campo13f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Dependencia Del Grupo / Autosuficiencia
+                </td>
+                <td>
+                    Q2
+                </td>
+                <td id="campo14"></td>
+                <td id="campo14f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Desinhibido / Controlado
+                </td>
+                <td>
+                    Q3
+                </td>
+                <td id="campo15"></td>
+                <td id="campo15f"></td>
+            </tr>
+            <tr>
+                <td>
+                    Tranquilo / Tensionado
+                </td>
+                <td>
+                    Q4
+                </td>
+                <td id="campo16"></td>
+                <td id="campo16f"></td>
+            </tr>
+            </tr>
+            </tbody>
+            </table>
+
+            <br>
+            <br>
+            <select id="pruebas" class="combo-box-eleprueba" onchange="llenarGraficaPf(this)">
+                <option value="0" disabled selected="">Seleccione...</option>
+            </select>
+</center>
+
+<div>
+    <center>
+        <!-- <button id="btnPDF2">
+                    <span>Descargar PDF</span>
+                </button> -->
+
+        <button id="decatipos">
+            <span>Registrar Decatipos</span>
+        </button>
+    </center>
+</div>
+</div>
+</div>
+</div>
+<script src="../js/Grafica2.js"></script>
+</body>
+</center>
+
+</html>

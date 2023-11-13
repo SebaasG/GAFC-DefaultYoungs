@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Sección 1 </title>
+
+    <link rel="stylesheet" href="../css/Style A.css">
+
+    <script src="../js/Ipv_Soft.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="botonSeccion" onclick="location.href='Seccion1.html'">Sección 1</button>
+            <button class="botonSeccion" onclick="location.href='Seccion2.html'">Sección 2</button>
+            <button class="botonSeccion" onclick="location.href='Seccion3.html'">Sección 3</button>
+            <button class="botonSeccion" onclick="location.href='seccion4.html'">Sección 4</button>
+            <button class="botonSeccion" onclick="location.href='seccion5.html'">Sección 5</button>
+        </div>
+
+        <div class="section">
+            <ul>
+
+                <!-- Pregunta 1 -->
+                <li>
+                    <p>1. T... debe salir de viaje con una persona de la que no conoce nada. ¿Sobre cuál de los
+                        siguientes aspectos de esa persona es preferible informar a T para que el viaje resulte mejor?
+                    </p>
+                    <div class="question">
+                        <span class="question-text">A. Su estilo de vida</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Los puntos que tengan en común</span>
+                        <select id="pregunta1" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Su actividad y responsabilidades profesionales</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 2 -->
+                <li>
+                    <p>2. Entre los siguientes tipos de vendedores de prendas confeccionadas, ¿cuál es el que tiene más
+                        probabilidades de éxito?</p>
+                    <div class="question">
+                        <span class="question-text">A. El que presente las últimas novedades</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. El que, tratando de conocer el estilo de su cliente, se interese
+                            por su modo de vida</span>
+                        <select id="pregunta2" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. El que posea una buena capacidad de convencer</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 3 -->
+                <li>
+                    <p>3. B... tiene un proyecto importante para la promoción de un nuevo producto y va a exponer su
+                        idea ante el Comité de Dirección. ¿Cuál de las siguientes cualidades le será más útil para
+                        persuadir a su auditorio?</p>
+                    <div class="question">
+                        <span class="question-text">A. Competencia técnica y un conocimiento perfecto del tema.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Capacidad para modificar sus razonamientos según la actitud del
+                            auditorio.</span>
+                        <select id="pregunta3" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Facultad para mantener el orden de sus ideas a pesar de las
+                            interrupciones.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 4 -->
+                <li>
+                    <p>4. Se envía a G..., contra su voluntad, a un país extranjero, por el cual no se siente atraído en
+                        principio, para una estancia de varias semanas. ¿Cuál será su actitud?</p>
+                    <div class="question">
+                        <span class="question-text">A. Estimar que la duración de su estancia es demasiado corta para
+                            conseguir integrarse.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Tratar de aprender la lengua para comprender mejor a este país y
+                            vivir más a gusto.</span>
+                        <select id="pregunta4" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No tener más que los contactos estrictamente necesarios para la
+                            buena marcha de su trabajo.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 5 -->
+                <li>
+                    <p>5. Según su opinión, las personas que dicen siempre “su” verdad a los demás, aunque esta sea
+                        desagradable, lo hacen, en general, porque:</p>
+                    <div class="question">
+                        <span class="question-text">A. No saben controlar sus impulsos y dicen espontáneamente lo que
+                            piensan.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No les gusta la hipocresía.</span>
+                        <select id="pregunta5" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Piensan que esto simplifica las relaciones.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 6 -->
+                <li>
+                    <p>6. Un buen amigo de C... había comenzado bastante brillantemente su carrera profesional, pero los
+                        resultados no han sido los que cabría esperar y terminó teniendo numerosos fracasos. ¿Qué piensa
+                        C...acerca de esto?</p>
+                    <div class="question">
+                        <span class="question-text">A. Que las condiciones no le han sido favorables.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Que no estaba a la altura necesaria.</span>
+                        <select id="pregunta6" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Que no ha utilizado bien los medios para salir adelante.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 7 -->
+                <li>
+                    <p>7. B... encuentra, en casa de unos amigos, a una persona que aparenta una edad muy inferior a la
+                        que realmente tiene. ¿Qué opinará B...?</p>
+                    <div class="question">
+                        <span class="question-text">A. “Probablemente ha encontrado en la vida lo que le
+                            convenía”</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. “Tiene buena suerte; es cuestión de naturaleza”</span>
+                        <select id="pregunta7" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. “Seguramente ha tenido una vida fácil”</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 8 -->
+                <li>
+                    <p>8. Para expandirse, S... decide aprender judo. Después de unos meses de entrenamiento se da
+                        cuenta de que progresa muy lentamente. ¿Cuál será su reacción?</p>
+                    <div class="question">
+                        <span class="question-text">A. Pensando que realmente no está hecho para el judo, elegirá otro
+                            deporte.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Convencido de que no está dotado para la actividad, buscará otra
+                            forma de actividad.</span>
+                        <select id="pregunta8" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Continuará sus esfuerzos con la esperanza de que seguramente
+                            serán un día exitosos.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 9 -->
+                <li>
+                    <p>9. P... se acuesta una noche muy fatigado, pero no puede dormirse porque sus vecinos del piso
+                        superior han organizado una fiesta muy ruidosa. ¿Qué hará?</p>
+                    <div class="question">
+                        <span class="question-text">A. Subir y advertir a sus vecinos.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Dar con la escoba algunos golpes en el techo.</span>
+                        <select id="pregunta9" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Tomar un somnífero y tratar de dormir cueste lo que
+                            cueste.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 10 -->
+                <li>
+                    <p>10. G..., que carece de teléfono, llega a una oficina de telégrafos para enviar un telegrama a la
+                        hora de cerrar. El encargado le dice que es demasiado tarde, que va a cerrar. ¿Qué hará G...?
+                    </p>
+                    <div class="question">
+                        <span class="question-text">A. Ir a casa de un amigo que tiene teléfono para poner el telegrama
+                            por teléfono.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Convencer al encargado de que su telegrama es muy urgente y que
+                            debe salir inmediatamente.</span>
+                        <select id="pregunta10" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Ir a una oficina de telégrafos que cierra más tarde.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 11 -->
+                <li>
+                    <p>11. X... hace un viaje de turismo por un país en que es costumbre discutir los precios. ¿Cuál
+                        será su actitud?</p>
+                    <div class="question">
+                        <span class="question-text">A. Hará pocas compras porque le molesta tener que discutir
+                            siempre.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Hará numerosas compras, incluso un poco inútiles, porque le
+                            encanta discutir los precios.</span>
+                        <select id="pregunta11" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Convencido de que le timarían, preferirá los almacenes de precios
+                            fijos.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 12 -->
+                <li>
+                    <p>12. Sin tener en cuenta la formación y competencia necesarias, ¿Cuál de las siguientes
+                        direcciones de servicios le gustaría asumir?</p>
+                    <div class="question">
+                        <span class="question-text">A. Gestión</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Personal</span>
+                        <select id="pregunta12" class="combo-box12" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Publicidad</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 13 -->
+                <li>
+                    <p>13. Un escritor poco conocido acaba de recibir el premio Planeta. ¿Qué cree usted que preferiría
+                        hacer?</p>
+                    <div class="question">
+                        <span class="question-text">A. Escribir menos y aprovechar su éxito para salir, recibir a la
+                            gente y hacer una vida social.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Intentar escribir una obra maestra.</span>
+                        <select id="pregunta13" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Dedicarse a la pintura e intentar triunfar también en
+                            ella.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 14 -->
+                <li>
+                    <p>14. Si usted se encontrara en una situación de examen en la que pudiera elegir entre dos temas,
+                        ¿cuál escogería?</p>
+                    <div class="question">
+                        <span class="question-text">A. Un tema ampliamente tratado durante el curso con el que tiene,
+                            casi, la plena seguridad de alcanzar la nota media necesaria.</span>
+                        <select id="pregunta14" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Un tema que le permita, con un mínimo de conocimientos, pero con
+                            mucha lógica e imaginación, obtener una calificación muy buena pero, quizá, también muy
+                            mala.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 15 -->
+                <li>
+                    <p>15. Entre las siguientes actividades de descanso físico en la naturaleza, ¿cuál prefiere usted?
+                    </p>
+                    <div class="question">
+                        <span class="question-text">A. Una vuelta por la bahía cuando el mar está agitado.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Un baño de sol en una playa de arena fina, en un hermoso día de
+                            verano con el aire en calma.</span>
+                        <select id="pregunta15" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Un paseo por el campo en primavera.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 16 -->
+                <li>
+                    <p>16. ¿Qué es, a su juicio, lo que atrae a más gente en los viajes o estancias en el extranjero?
+                    </p>
+                    <div class="question">
+                        <span class="question-text">A. Los paisajes nuevos.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. El descubrimiento de otra civilización artística.</span>
+                        <select id="pregunta16" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. El contacto con una población de costumbres muy
+                            diferentes.</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 17 -->
+                <li>
+                    <p>17. P... camina rápidamente por la calle y parece que tiene prisa. Un joven que realiza una
+                        encuesta le detiene para hacerle algunas preguntas extrañas, pero divertidas. ¿Qué hará P...?
+                    </p>
+                    <div class="question">
+                        <span class="question-text">A. Rehusar con firmeza contestar a las preguntas.</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Responder rápidamente, porque lo encuentra divertido.</span>
+                        <select id="pregunta17" class="combo-box" required>
+                            <option value="0" disabled selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Excusarse de no tener tiempo para responder, sintiendo de verdad
+                            no poder hacerlo.</span>
+                    </div>
+                </li>
+
+                <div">
+
+                    <button id="Seccion1" class="next-button" onclick="validarSeccion1()">
+
+                        <span> Siguiente Seccion </span>
+                    </button>
+        </div>
+        </ul>
+</body>
+
+</html
