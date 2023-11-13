@@ -94,7 +94,7 @@ async function validarSeccion5() {
     });
 
     setTimeout(() => {
-        var nuevaPestana = window.open("index.html", "_blank");
+        var nuevaPestana = window.open("../index.html", "_blank");
 
         setTimeout(function () {
             window.open('about:blank', '_self').close();

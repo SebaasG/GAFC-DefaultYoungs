@@ -91,7 +91,7 @@ async function validarSeccionP9() {
         timer: 8000
     });
     setTimeout(() => {
-        var nuevaPestana = window.open("index.html", "_blank");
+        var nuevaPestana = window.open("../index.html", "_blank");
         setTimeout(function () {
             window.open('about:blank', '_self').close();
         }, 2);
