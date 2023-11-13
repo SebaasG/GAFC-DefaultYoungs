@@ -1,6 +1,6 @@
 //Funcion para guardar la seccion 1
 async function guardar1() {
-    for (let i = 1; i <= 17; i++) { 
+    for (let i = 1; i <= 17; i++) {
         var idPregunta = 'pregunta' + i; // construir el id de la pregunta
         var numPreRes = i; //Asigna el numero de la pregunta mientra se reproduce el ciclo
         var respRes = document.getElementById(idPregunta).value; // Trae el valor de la pregunta
@@ -125,7 +125,12 @@ async function validarSeccion1() {
         }
     }
     await guardar1();
-    location.href = 'Seccion2.html';    
+    // location.href = 'Seccion2.html'; 
+    var nuevaPestana = window.open("Seccion2.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccion2() {
@@ -141,7 +146,11 @@ async function validarSeccion2() {
         }
     }
     await guardar2();
-    location.href = 'Seccion3.html';
+    var nuevaPestana = window.open("Seccion3.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccion3() {
@@ -157,7 +166,11 @@ async function validarSeccion3() {
         }
     }
     await guardar3();
-    location.href = 'Seccion4.html';
+    var nuevaPestana = window.open("Seccion4.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccion4() {
@@ -172,6 +185,9 @@ async function validarSeccion4() {
             return;
         }
     }
-    await guardar4();
-    location.href = 'Seccion5.html';
+    var nuevaPestana = window.open("Seccion5.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }

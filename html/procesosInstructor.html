@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <title>Procesos de instructor </title>
@@ -9,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
+
 <body>
 
   <div class="form-Procesosinstructor">
@@ -20,42 +22,55 @@
         </a>
     </header> -->
 
-    <center>
-      <h4> ¡Bienvenido! </h4>
-      <br>
+      <center>
+        <h4> ¡Bienvenido! </h4>
+        <br>
 
-      <div class="form-index">
-      </div>
+        <div class="form-index">
+        </div>
 
-      <div>
+        <div>
 
-        <button onclick="window.location.href = 'archivos.html'">
-          <span> Citación a prueba </span>
-        </button>
-  
-        <button onclick="window.location.href = 'Resultados.html'">
-          <span> Ver resultados </span>
-        </button>
-  
-        <button onclick="window.location.href = 'registrarInstructor.html'">
-          <span> Registrar Instructor </span>
-        </button>
-  
-        <button onclick="window.location.href = 'CitacionApe.html'">
-          <span> Citacion Aprendiz </span>
-        </button>
+          <button onclick="window.location.href = 'archivos.html'">
+            <span> Citación a prueba </span>
+          </button>
 
-        <button onclick="window.location.href = 'TablaInstructor.html'">
-          <span> Ver instructores </span>
-        </button>
+          <button onclick="window.location.href = 'Resultados.html'">
+            <span> Ver resultados </span>
+          </button>
 
-      </div>
+          <button onclick="window.location.href = 'registrarInstructor.html'">
+            <span> Registrar Instructor </span>
+          </button>
 
-      <br>
-      <footer class="fin-pag">
-        <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
-      </footer>
-    </center>
+          <button onclick="window.location.href = 'CitacionApe.html'">
+            <span> Citacion Aprendiz </span>
+          </button>
+
+          <button onclick="window.location.href = 'TablaInstructor.html'">
+            <span> Ver instructores </span>
+          </button>
+
+          <button onclick="cerrarVentana()">
+            <span> cerrar sesión</span>
+            <script>
+              function cerrarVentana() {
+                href = ""
+                setTimeout(function () {
+                  var nuevaPestana = window.open("../index.html", "_blank");
+                  window.open('about:blank', '_self').close();
+                }, 2);
+              }
+            </script>
+          </button>
+
+        </div>
+
+        <br>
+        <footer class="fin-pag">
+          <p> © Todos los derechos de esta pagina son reservados || Default Youngs || 2023 </p>
+        </footer>
+      </center>
 
   </div>
 

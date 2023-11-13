@@ -236,7 +236,11 @@ async function validarSeccionP1() {
         }
     }
     await guardarp1();
-    location.href = 'SeccionP2.html';
+    var nuevaPestana = window.open("SeccionP2.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 
 }
 
@@ -253,7 +257,11 @@ async function validarSeccionP2() {
         }
     }
     await guardarp2();
-    location.href = 'SeccionP3.html';
+    var nuevaPestana = window.open("SeccionP3.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccionP3() {
@@ -269,7 +277,11 @@ async function validarSeccionP3() {
         }
     }
     await guardarp3();
-    location.href = 'SeccionP4.html';
+    var nuevaPestana = window.open("SeccionP4.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccionP4() {
@@ -286,7 +298,11 @@ async function validarSeccionP4() {
         }
     }
     await guardarp4();
-    location.href = 'SeccionP5.html';
+    var nuevaPestana = window.open("SeccionP5.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 
 }
 
@@ -304,7 +320,11 @@ async function validarSeccionP5() {
         }
     }
     await guardarp5();
-    location.href = 'SeccionP6.html';
+    var nuevaPestana = window.open("SeccionP6.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 
 }
 
@@ -322,7 +342,11 @@ async function validarSeccionP6() {
     }
 
     await guardarp6();
-    location.href = 'SeccionP7.html';
+    var nuevaPestana = window.open("SeccionP7.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 
 }
 
@@ -339,7 +363,11 @@ async function validarSeccionP7() {
         }
     }
     await guardarp7();
-    location.href = 'SeccionP8.html';
+    var nuevaPestana = window.open("SeccionP8.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 
 async function validarSeccionP8() {
@@ -355,6 +383,10 @@ async function validarSeccionP8() {
         }
     }
     await guardarp8();
-    location.href = 'SeccionP9.html';
+    var nuevaPestana = window.open("SeccionP9.html", "_blank");
+
+    setTimeout(function () {
+        window.open('about:blank', '_self').close();
+    }, 2);
 }
 

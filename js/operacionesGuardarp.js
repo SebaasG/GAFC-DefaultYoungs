@@ -90,9 +90,11 @@ async function validarSeccionP9() {
         confirmButtonColor: '#0e810e',
         timer: 8000
     });
-
     setTimeout(() => {
-        location.href = 'index.html';
+        var nuevaPestana = window.open("index.html", "_blank");
+        setTimeout(function () {
+            window.open('about:blank', '_self').close();
+        }, 2);
     }, 3000);
 }
 
