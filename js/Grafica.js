@@ -11,7 +11,6 @@ function llenarGrafica(select) {
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
     var cbo = document.getElementById("pruebas").value;
     var cbof = cbo-1;
-console.log(cbof);
     fetch('http://localhost:8085/apiPrue/'+ documentoSeleccionado+ "/"+cbof ,{
         method: 'GET'
     })
@@ -19,8 +18,6 @@ console.log(cbof);
         .then(data => {
             // Parsea los datos separados por comas en un array de números
             datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-            console.log('Datos de la consulta:', datosConsulta);
-
             // Llenar los campos td con los valores del array
             for (let i = 0; i < datosConsulta.length; i++) {
                 const campoId = 'campo' + (i + 1); // Los IDs están numerados de campo1 a campo12
@@ -132,7 +129,6 @@ function llenarCbo() {
         .then(data => {
             // Obtén el número de opciones que deseas agregar
             const numeroDeOpciones = data; // Asume que data contiene el número deseado
-console.log(data);
             // Agrega la cantidad de opciones especificada
             for (let i = 1; i <= numeroDeOpciones; i++) {
                 const option = document.createElement("option");

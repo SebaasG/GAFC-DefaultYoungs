@@ -23,7 +23,7 @@ function llenarGraficaPf(select) {
             try {
                 // Parsea los datos separados por comas en un array de números
                 datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-                console.log('Datos de la consulta:', datosConsulta);
+            
                 // Llenar los campos td con los valores del array
                 for (let i = 0; i < datosConsulta.length; i++) {
                     const campoId = 'campo' + (i + 1);
@@ -48,7 +48,7 @@ function llenarGraficaPf(select) {
         .then(data => {
             // Parsea los datos separados por comas en un array de números
             datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-            console.log('Datos de la consulta:', datosConsulta);
+     
             // Llenar los campos td con los valores del array
             for (let i = 0; i < datosConsulta.length; i++) {
                 const campoId = 'campo' + (i + 1) + "f";
@@ -93,7 +93,6 @@ function llenarGraficaPf(select) {
         .catch(error => {
             console.error('Error', error);
             resultadoSolicitu1 = 2; // Establece resultadoSolicitu1 en 2 si hay un error
-            console.log(resultadoSolicitu1);
             localStorage.setItem('resultadoSolicitud1', resultadoSolicitu1);
         });
 }
