@@ -48,7 +48,7 @@ function llenarGraficaPf(select) {
         .then(data => {
             // Parsea los datos separados por comas en un array de números
             datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-     
+
             // Llenar los campos td con los valores del array
             for (let i = 0; i < datosConsulta.length; i++) {
                 const campoId = 'campo' + (i + 1) + "f";
