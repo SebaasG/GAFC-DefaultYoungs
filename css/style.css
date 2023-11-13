@@ -1,0 +1,1017 @@
+/*Comandos para el formulario de Inicio*/
+body {
+  background-image: url('../img/fondo.jpg');
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeats(auto-fill, minmax(15rem, 1fr));
+}
+
+
+.form-register {
+  width: 100%;
+  max-width: 600px; /* Establece un ancho máximo para evitar que la sección se vuelva demasiado ancha en pantallas grandes */
+  background: #ffffff;
+  padding: 30px; /* Reduce el relleno en pantallas más pequeñas */
+  margin: auto;
+  margin-top: 150px; /* Reduce el margen superior en pantallas más pequeñas */
+  border-radius: 15px;
+  font-family: 'Calibri', sans-serif; /* Cambia 'calibri' a 'Calibri' y agrega una fuente de respaldo */
+  color: #208a29;
+  box-shadow: 5px 10px 20px #000;
+}
+
+/*Comandos para el logo y el nombre de inicio*/
+.logo img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 54%;
+}
+
+
+.logo {
+  display: flex;
+  font-size: 12px;
+}
+
+.mini-text{
+  display: flex;
+}
+/*-----------------------------*/
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+
+.form-register .combo-box {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-codaprendiz .codigo-ape{
+width: 36%;
+background: #eceaea;
+border: 3px solid #000000;
+border-radius: 8px;
+padding: 12px;
+color: #208a29;
+margin: 1px;
+margin-bottom: -17px;
+font-size: 18px;
+}
+
+/*Comandos para el boton*/
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 255, 103);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #50c050;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 255, 103);
+  box-shadow: 0 0 30px 5px rgb(61, 255, 103);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/*-----------------------------*/
+
+.sep{
+  margin-top: 15px;
+  color: #111;
+}
+
+.fin-pag {
+  margin-top: 50px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Comandos para el formulario de instructor*/
+.bodyIns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.form-instructor {
+  width: 650px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: -2px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-instructor h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+/*Comandos para el logo y el nombre de instructor*/
+.form-instructor .logo img{
+  height: 95px;
+}
+
+.form-instructor .logo{
+  display: flex;
+  font-size: 12px;
+}
+/*-----------------------------*/
+
+.form-instructor input[type="password"] {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-instructor input[type="number"] {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-instructor .button-container {
+  margin-top: 10px;
+}
+
+.form-instructor .next-button {
+  padding: 10px ;
+  background-color: #208a29; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-instructor .next-button:hover {
+  background-color: #0e810e;
+}
+
+.form-instructor .sep{
+  margin-top: 15px;
+  color: #111;
+}
+
+.form-instructor .fin-pag {
+  margin-top: 50px;
+}
+
+.form-Procesosinstructor{
+  width: 650px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: -2px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-Procesosinstructor h4{
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+.form-Procesosinstructor button span{
+  background-color: #208a29;
+  padding: 16px 24px;
+  width: 270px;
+  border-radius: 6px;
+  transition: .3;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*Comandos para el formulario de aprendiz*/
+.form-codaprendiz {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: 37px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.horizontal-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: -2%;
+  margin-bottom: 5%;
+  flex-direction: row-reverse;
+}
+
+.horizontal-container > div {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/*Comandos para el logo y el nombre de instructor*/
+.form-codaprendiz .logo img{
+  height: 95px;
+}
+
+.form-aprendiz .logoApe{
+  display: flex;
+  font-size: 12px;
+  margin-bottom: -57px;
+}
+/*-----------------------------*/
+
+.form-codaprendiz h4 {
+  font-size: 25px;
+  margin-bottom: 7px;
+  margin-top: 38px;
+}
+
+.tipo-fecha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.programa-container,
+.fecha-container {
+  text-align: center;
+}
+
+.combo-box-ficha {
+  display: block;
+  margin-top: 10px; /* Espacio entre el h1 y el select */
+}
+
+.form-date {
+  display: block;
+  margin-top: 10px; /* Espacio entre el h1 y el input */
+}
+
+
+
+.form-codaprendiz .codigo-txt{
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-codaprendiz .next-button-Ape {
+  margin-top: 20px;
+  padding: 10px ;
+  background-color: #208a29; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-codaprendiz .next-button-Ape:hover {
+  background-color: #0e810e;
+}
+
+.form-codaprendiz .sep{
+  margin-top: 25px;
+  color: #111;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Comandos para el formulario de citacion.*/
+.citacion-ape {
+  width: 600px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: 21px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.citacion-ape .nombre-txt {
+    width: 106%;
+    background: #eceaea;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 12px;
+    color: #208a29;
+    margin: 1px 1px -17px;
+    font-size: 18px;
+}
+
+.citacion-ape .codficha-txt {
+    width: 96%;
+    background: #eceaea;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 12px;
+    color: #208a29;
+    margin: 1px 1px -17px;
+    font-size: 18px;
+}
+
+.citacion-ape .document-txt{
+  width: 46%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 1px;
+  margin-left: 138px;
+  margin-bottom: -17px;
+  font-size: 18px;
+}
+
+.citacion-ape h4 {
+  font-size: 20px;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+.citacion-ape .combo-box-ficha{
+  width: 98%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 0% ;
+  font-size: 18px;
+}
+
+.horizontal-container .tipo-fecha{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 5%;
+  flex-direction: row-reverse;
+}
+
+.citacion-ape .form-date{
+  width: 95%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: -1px 0;
+  font-size: 18px;
+}
+
+.citacion-ape .combo-box-prueba{
+  width: 46%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 0% ;
+  font-size: 18px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Apartado (Código) para la tabla de resultados. */
+
+.bodyResu {
+  background: #e6ffe6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e6ffe6, #e6ffe6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e6ffe6, #e6ffe6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.titResu {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Apartado (Código) para el registro del instructor. */
+
+.form-instructorR {
+  width: 600px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: 112px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-instructorR h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+.form-instructorR input[type="number"] {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-instructorR input[type="text"] {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.form-instructorR input[type="password"] {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* formulario index */
+
+.index-proceso {
+  width: 100%;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.index-proceso h4 {
+  font-size: 25px;
+  margin-bottom: 7px;
+  margin-top: 38px;
+}
+
+.form-indexSeleccion{
+  width: 650px;
+  background: #ffffff;
+  padding: 45px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-indexSeleccion h4 {
+  font-size: 25px;
+  margin-bottom: 7px;
+  margin-top: 38px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Código para el cuadro blanco del formulario */
+.form-archivo {
+  width: 612px;
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 31px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+/* --------------------------------------------- */
+
+/* Código para el input tipo file del formulario */
+.file input {
+  display: none;
+}
+
+.file label {
+  color: #000;
+  font: 120% sans-serif;
+  display: block;
+  padding: 8px 21px;
+  margin-top: 13PX;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #208a29;
+  cursor: pointer;
+}
+/* --------------------------------------------- */
+
+/* Código para el combo box (cbo-prueba) del formulario */
+.form-archivo .combo-box-prueba {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Estilo para el boton descargar PDF */
+
+button {
+  margin-top: 20px;
+  border: 0;
+  background-image: linear-gradient(
+  150g,
+  );
+border-radius: 8px;
+color: #fff;
+display: flex;
+font-size: 18px;
+padding: 8px;
+cursor: pointer;
+transition: .3s;
+}
+
+/* Estilo para la tabla */
+
+table, th, td {
+  border: solid 1px rgb(2, 13, 20);
+  border-collapse: collapse;
+  margin-top: 13px;
+  text-align: center;
+  padding: 0px 58px;
+  width: 100%;
+}
+
+/*diseño de la grafica*/
+body-grafica{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(54, 162, 235, 1); /* Cambia el fondo según tus preferencias */
+}
+
+.chartContainer {
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    border: solid 3px rgb(2, 13, 20);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.combo-box-eleprueba {
+  width: 50%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  color: #208a29;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+/* --------------------------------------------- */
+/* Estilo para el boton descargar PDF */
+
+button {
+  margin-top: 24px;
+  border: 0;
+  background-image: linear-gradient(
+  150g,
+  );
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button span{
+  background-color: #208a29;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3;
+}
+
+button:hover span{
+  background-color: rgb(133, 175, 133);
+}
+
+button:active{
+  transform: scale(0.9);
+}
+
+
+/* --------------------------------------------- */
+
+/* Código para el cuadro blanco del formulario archivo */
+.form-archivo {
+  width: 612px;
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 115px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+/* --------------------------------------------- */
+
+/* Código para el input tipo file del formulario archivo */
+.file input {
+  display: none;
+}
+
+.file label {
+  color: #000;
+  font: 120% sans-serif;
+  display: block;
+  padding: 8px 21px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #208a29;
+  cursor: pointer;
+}
+/* --------------------------------------------- */
+
+/* Código para el combo box (cbo-prueba) del formulario archivo */
+.form-archivo .combo-box-prueba {
+    width: 50%;
+    background: #eceaea;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 12px;
+    color: #208a29;
+    margin: 14px 0;
+    font-size: 18px;
+  }
+/* --------------------------------------------- */
+
+/* Código para el boton del formulario archivo */
+button {
+  margin-top: 20px;
+  border: 0;
+  background-image: linear-gradient(
+  150g,
+  );
+border-radius: 8px;
+color: #fff;
+display: flex;
+font-size: 18px;
+padding: 8px;
+cursor: pointer;
+transition: .3s;
+}
+
+button span{
+  background-color: #208a29;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3;
+}
+
+button:hover span{
+  background-color: rgb(133, 175, 133);
+}
+
+button:active{
+  transform: scale(0.9);
+}
+/* --------------------------------------------- */
+
+/* Media query para ajustes en pantallas más pequeñas */
+@media screen and (max-width: 1180px) {
+  .form-register{
+    padding: 9px;
+    margin-top: 130px;
+    
+    box-shadow: 2px 5px 10px #000;
+  }
+  .form-instructor{
+    margin-top: 78px;
+  }
+
+  .form-Procesosinstructor{
+    margin-top: 20px;
+  }
+
+  .form-codaprendiz{
+    margin-top: 150px;
+  }
+
+  .index-proceso{
+    margin-top: 170px;
+  }
+
+  .form-indexSeleccion{
+    margin-top: 130px;
+  }
+
+  .citacion-ape{
+    margin-top: 42px;
+  }
+  .form-archivo{
+    margin-top: 80px;
+  }
+  .index-proceso{
+    margin-top: 200px;
+  }
+  .form-instructorR{
+    margin-top: 44px;
+  }
+}
+
+/* Media query para ajustes en pantallas más grandes */
+@media screen and (min-width: 1920px) {
+  .form-register {
+  margin-top: 200px;
+  }
+
+  .form-instructor{
+    margin-top: 130px;
+  }
+
+  .form-Procesosinstructor{
+    margin-top: 85px;
+  }
+
+  .form-codaprendiz{
+    margin-top: 200px;
+  }
+  .index-proceso{
+    margin-top: 200px;
+  }
+  .form-indexSeleccion{
+    margin-top: 200px;
+  }
+
+  .citacion-ape{
+    margin-top: 42px;
+  }
+  .form-archivo{
+    margin-top: 140px;
+  }
+  .index-proceso{
+    margin-top: 200px;
+  }
+  .form-instructorR{
+    margin-top: 118px;
+  }}
+
+  @media screen and (max-width: 500px) {
+    .form-register {
+    margin-top: 200px;
+    max-width: 470px;
+    }
+  
+    .form-instructor{
+      margin-top: 130px;
+      max-width: 470px;
+    }
+  
+    .form-Procesosinstructor{
+      margin-top: 85px;
+      max-width: 360px;
+    }
+  /*form codigo aprendiz*/
+    .form-codaprendiz{
+      margin-top: 200px;
+      max-width: 400px;
+    }
+
+    .form-codaprendiz .codigo-ape{
+      font-size: 16px;
+    }
+/***********************************/
+.index-proceso{
+    margin-top: 200px;
+    max-width: 400px;
+  }
+
+  .form-indexSeleccion{
+    margin-top: 200px;
+    max-width: 400px;
+  }
+  
+  .form-archivo{
+    margin-top: 140px;
+    max-width: 420px;
+  }
+    
+  .form-instructorR{
+    margin-top: 118px;
+    max-width: 390px;
+  }
+}
+
+/* -------------------------------------------------------------------------------  */
+/* Código para el formulario de actualizar contraseña */
+
+.form-contra {
+  width: 612px;
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 31px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-contra h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 38px;
+}
+
+.form-contra input[type="password"] {
+  width: 48%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.form-contra input[type="text"] {
+  width: 48%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.form-contra .combo-box-contra {
+  width: 52%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.form-contra {
+  width: 612px;
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 31px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: #208a29;
+  box-shadow: 10px 15px 45px #000;
+}
+
+.form-contra h4 {
+  font-size: 22px;
+  margin-bottom: 3px;
+  margin-top: 38px;
+}
+
+.form-contra input[type="password"] {
+  width: 48%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.form-contra input[type="text"] {
+  width: 48%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.form-contra .combo-box-contra {
+  width: 52%;
+  background: #eceaea;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  padding: 9px;
+  color: #208a29;
+  margin: 10px 0;
+  font-size: 16px;
+}
