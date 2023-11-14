@@ -52,7 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 timer: 8000
             });
             setTimeout(() => {
-                location.href = 'procesosInstructor.html';
+                var nuevaPestana = window.open("procesosInstructor.html", "_blank");
+        setTimeout(function () {
+            window.open('about:blank', '_self').close();
+        }, 2)
             }, 2000);
             
         })

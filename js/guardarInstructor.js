@@ -35,9 +35,6 @@ btn.addEventListener("click", function () {
         setTimeout(() => {
             location.href = 'procesosInstructor.html';
         }, 2000);
-        
-  
-        // location.reload();
     })
     .catch(error => {
         Swal.fire('¡ ERROR !',' ¡ No se guardaron los datos ! ' , 'error');

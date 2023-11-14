@@ -1,12 +1,33 @@
 /*Comandos para el formulario de Inicio*/
-body {
-  background-image: url('../img/fondo.jpg');
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeats(auto-fill, minmax(15rem, 1fr));
-}
+body, html {
+  height: 100%;
+  margin: 0;
+  }
+  body {
+    background-image: url('../img/FondoVic.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-position: center center;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeats(auto-fill, minmax(15rem, 1fr));
+  }
+/* 
+  body {
+    background-image: url('../img/fondoFinal.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-position: center center;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  } */
 
 
 .form-register {

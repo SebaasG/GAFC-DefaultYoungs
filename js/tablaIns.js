@@ -43,22 +43,22 @@ const initDataTable = async () => {
 };
 
 const listUsers = async () => {
-try {
-    const response = await fetch("http://localhost:8085/apiIns/get");
-    const instructores = await response.json();
-    let content = ``;
+    try {
+        const response = await fetch("http://localhost:8085/apiIns/get");
+        const instructores = await response.json();
+        let content = ``;
 
-    instructores.forEach((instructor, index) => {
-        let estado;
-        if (instructor.estado === 1) {
-            estado = "Activo";
-        } else if (instructor.estado === 0) {
-            estado = "Inactivo";
-        } else if (instructor.estado === 3) {
-            estado = "Admin";
-        }
+        instructores.forEach((instructor, index) => {
+            let estado;
+            if (instructor.estado === 1) {
+                estado = "Activo";
+            } else if (instructor.estado === 0) {
+                estado = "Inactivo";
+            } else if (instructor.estado === 3) {
+                estado = "Admin";
+            }
 
-        content += `
+            content += `
             <tr>
                 <td>${index + 1}</td>
                 <td>${instructor.docIns}</td>
@@ -71,12 +71,12 @@ try {
                     </center>                         
                 </td>  
             </tr>`;
-    });
+        });
 
-    tableBody_ins.innerHTML = content;
-} catch (ex) {
-    alert(ex);
-}
+        tableBody_ins.innerHTML = content;
+    } catch (ex) {
+        alert(ex);
+    }
 };
 $(document).on("click", ".button1", function () {
     showDocument(this);
