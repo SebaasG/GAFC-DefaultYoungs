@@ -1992,12 +1992,15 @@ async function opc() {
 
 
 
-function guardarPrueb() {
+// Función para guardar los resultados de la prueba Pf
+function guardarPruebaPf() {
+    // Realiza una solicitud POST para guardar los resultados en la API
     fetch("http://localhost:8085/apiPf/saveRes", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
+        // Envía los resultados y otros parámetros en el cuerpo de la solicitud
         body: new URLSearchParams({
             "resu1": Ae,
             "resu2": B,
@@ -2020,6 +2023,7 @@ function guardarPrueb() {
         })
     })
         .then(response => {
+            // Verifica si la respuesta fue exitosa
             if (!response.ok) {
                 throw new Error("Error al guardar los datos");
             }
@@ -2030,8 +2034,12 @@ function guardarPrueb() {
         });
 }
 
-const btn1 = document.getElementById("SeccionP9")
+// Obtiene la referencia al botón con el ID "SeccionP9"
+const btn1 = document.getElementById("SeccionP9");
+
+// Agrega un evento de escucha al botón
 btn1.addEventListener("click", async function () {
+    // Espera la validación de la Sección P9 antes de ejecutar la función para guardar la prueba Pf
     await validarSeccionP9();
 });
 

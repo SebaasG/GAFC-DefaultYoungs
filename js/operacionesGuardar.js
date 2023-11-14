@@ -1428,12 +1428,15 @@ function decA() {
     sumaA = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10;
     console.log(sumaA);
 }
-function guardarPrueb() {
+// Función para guardar los resultados de la prueba
+function guardarPrueba() {
+    // Realiza una solicitud POST para guardar los resultados en la API
     fetch("http://localhost:8085/apiPrue/saveRes", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
+        // Envía los resultados y otros parámetros en el cuerpo de la solicitud
         body: new URLSearchParams({
             "resu1": sumDGV,
             "resu2": sumI,
@@ -1451,6 +1454,7 @@ function guardarPrueb() {
         })
     })
         .then(response => {
+            // Verifica si la respuesta fue exitosa
             if (!response.ok) {
                 throw new Error("Error al guardar los datos");
             }
@@ -1461,12 +1465,15 @@ function guardarPrueb() {
         });
 }
 
+// Obtiene la referencia al botón con el ID "Seccion5"
 const btn = document.getElementById("Seccion5");
 
+// Agrega un evento de escucha al botón
 btn.addEventListener("click", async function () {
+    // Espera la validación de la Sección 5 antes de ejecutar la función para guardar la prueba
     await validarSeccion5();
-
 });
+
 
 
 

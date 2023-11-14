@@ -1,20 +1,27 @@
+// Declaración de variables globales
 let myChart;
-let resultadoSolicitu1;
+let resultadoSolicitud1;
 
+// Función para llenar la gráfica Pf
 function llenarGraficaPf(select) {
-
+    // Si ya existe un gráfico, destrúyelo antes de crear uno nuevo
     if (myChart) {
         myChart.destroy();
     }
 
+    // Array para almacenar los datos de la consulta
     let datosConsulta = [];
+    // Obtiene el documento seleccionado del almacenamiento local
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
+    // Obtiene el valor seleccionado del elemento con el ID "pruebas"
     var cbo = document.getElementById("pruebas").value;
+    // Calcula el índice para la consulta (resta 1)
     var cbof = cbo - 1;
 
+    // Limpia los campos antes de cargar la gráfica
     limpiarCampos();
 
-    //FETCH PARA TRAER LOS PUNTAJES DIRECTOS DE LA BASE DE DATOS SEGUN EL APRENDIZ
+    // FETCH PARA TRAER LOS PUNTAJES DIRECTOS DE LA BASE DE DATOS SEGÚN EL APRENDIZ
     fetch('http://localhost:8085/apiPf/directo/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
@@ -23,8 +30,8 @@ function llenarGraficaPf(select) {
             try {
                 // Parsea los datos separados por comas en un array de números
                 datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-            
-                // Llenar los campos td con los valores del array
+
+                // Llena los campos td con los valores del array
                 for (let i = 0; i < datosConsulta.length; i++) {
                     const campoId = 'campo' + (i + 1);
                     const campo = document.getElementById(campoId);
@@ -40,7 +47,7 @@ function llenarGraficaPf(select) {
             console.error('Error en la solicitud HTTP:', error);
         });
 
-    //FETCH PARA TRAER LO PUNTAJES FINALES DEL APRENDIZ SI ES QUE LOS TIENE 
+    // FETCH PARA TRAER LOS PUNTAJES FINALES DEL APRENDIZ SI ES QUE LOS TIENE 
     fetch('http://localhost:8085/apiPf/final/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
@@ -49,7 +56,7 @@ function llenarGraficaPf(select) {
             // Parsea los datos separados por comas en un array de números
             datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
 
-            // Llenar los campos td con los valores del array
+            // Llena los campos td con los valores del array
             for (let i = 0; i < datosConsulta.length; i++) {
                 const campoId = 'campo' + (i + 1) + "f";
                 const campo = document.getElementById(campoId);
@@ -57,15 +64,16 @@ function llenarGraficaPf(select) {
                     campo.textContent = datosConsulta[i].toString();
                 }
             }
-            //LLENAR LA GRAFICA CON LOS VALORES QUE SE TRAEN EN EL FETCH
+
+            // LLENA LA GRÁFICA CON LOS VALORES QUE SE TRAEN EN EL FETCH
             const ctx = document.getElementById('myChart').getContext('2d');
             myChart = new Chart(ctx, {
                 type: 'line', // Tipo de gráfico (en este caso, de línea)
                 data: {
-                    labels: ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'Q1', 'Q2', 'Q3', 'Q4', " "], // Etiquetas para el eje X
+                    labels: ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'Q1', 'Q2', 'Q3', 'Q4', ' '], // Etiquetas para el eje X
                     datasets: [{
                         label: 'RESULTADOS',
-                        data: datosConsulta,  // Usamos los datos obtenidos de la consulta
+                        data: datosConsulta,  // Utiliza los datos obtenidos de la consulta
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         borderColor: 'rgba(255, 99, 132, 1)',
                         borderWidth: 1
@@ -82,24 +90,23 @@ function llenarGraficaPf(select) {
                 }
             });
 
-            //PARA DEFINIR SI LA TABLA TIENE CARGADOS O NO LOS DATOS FINALES
+            // PARA DEFINIR SI LA TABLA TIENE CARGADOS O NO LOS DATOS FINALES
             if (datosConsulta.length === 0) {
-                resultadoSolicitu1 = 2; // Establece resultadoSolicitu1 en 2 si los datos están vacíos   
+                resultadoSolicitud1 = 2; // Establece resultadoSolicitud1 en 2 si los datos están vacíos   
             } else {
-                resultadoSolicitu1 = 1; // Establece resultadoSolicitu1 en 1 si la solicitud es exitosa y los datos no están vacíos
+                resultadoSolicitud1 = 1; // Establece resultadoSolicitud1 en 1 si la solicitud es exitosa y los datos no están vacíos
             }
-            localStorage.setItem('resultadoSolicitud1', resultadoSolicitu1); //guarda en el localStorage el resultado
+            localStorage.setItem('resultadoSolicitud1', resultadoSolicitud1); // Guarda en el localStorage el resultado
         })
         .catch(error => {
             console.error('Error', error);
-            resultadoSolicitu1 = 2; // Establece resultadoSolicitu1 en 2 si hay un error
-            localStorage.setItem('resultadoSolicitud1', resultadoSolicitu1);
+            resultadoSolicitud1 = 2; // Establece resultadoSolicitud1 en 2 si hay un error
+            localStorage.setItem('resultadoSolicitud1', resultadoSolicitud1);
         });
 }
 
-//FUNCION PARA LIMPIAR CAMPOS ANTES DE CARGAR LA GRAFICA
+// FUNCION PARA LIMPIAR CAMPOS ANTES DE CARGAR LA GRAFICA
 function limpiarCampos() {
-
     for (let i = 1; i <= 16; i++) {
         const campoId = 'campo' + i;
         const campo = document.getElementById(campoId);

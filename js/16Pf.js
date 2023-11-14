@@ -206,7 +206,7 @@ async function guardarp8() {
     }
 }
 
-
+//funcion para las alertas que representan error
 function alertas() {
     Swal.fire({
         position: 'center',
@@ -223,20 +223,21 @@ function alertas() {
     });
 }
 
+//función asincrona para validar que no esten vacios los campos
 async function validarSeccionP1() {
     var preguntas = ['preguntaP1', 'preguntaP2', 'preguntaP3', 'preguntaP4', 'preguntaP5', 'preguntaP6',
         'preguntaP7', 'preguntaP8', 'preguntaP9', 'preguntaP10', 'preguntaP11', 'preguntaP12', 'preguntaP13',
         'preguntaP14', 'preguntaP15', 'preguntaP16', 'preguntaP17', 'preguntaP18', 'preguntaP19', 'preguntaP20', 'preguntaP21'];
     for (var i = 0; i < preguntas.length; i++) {
         var pregunta = document.getElementById(preguntas[i]);
-        if (pregunta.value == 0) {
-            pregunta.focus();
-            alertas();
+        if (pregunta.value == 0) {//si el valor de la pregunta es 0
+            pregunta.focus();//se hace focus en la pregunta que falta por constesar
+            alertas();//Arroja la alerta por el error 
             return;
         }
     }
-    await guardarp1();
-    var nuevaPestana = window.open("SeccionP2.html", "_blank");
+    await guardarp1();//funcion para guardar las respuestas
+    var nuevaPestana = window.open("SeccionP2.html", "_blank"); // abre una nueva pestaña en seccion 2
 
     setTimeout(function () {
         window.open('about:blank', '_self').close();

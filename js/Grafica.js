@@ -1,24 +1,30 @@
 let myChart;
 
+// Función para llenar la gráfica
 function llenarGrafica(select) {
-
+    // Si ya existe un gráfico, destrúyelo antes de crear uno nuevo
     if (myChart) {
         myChart.destroy();
     }
 
-
+    // Array para almacenar los datos de la consulta
     let datosConsulta = [];
+    // Obtiene el documento seleccionado del almacenamiento local
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
+    // Obtiene el valor seleccionado del elemento con el ID "pruebas"
     var cbo = document.getElementById("pruebas").value;
-    var cbof = cbo-1;
-    fetch('http://localhost:8085/apiPrue/'+ documentoSeleccionado+ "/"+cbof ,{
+    // Calcula el índice para la consulta (resta 1)
+    var cbof = cbo - 1;
+
+    // Realiza una solicitud GET a la API con el documento seleccionado y el índice
+    fetch('http://localhost:8085/apiPrue/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
         .then(response => response.text())
         .then(data => {
             // Parsea los datos separados por comas en un array de números
             datosConsulta = data.split(',').map(Number).filter(num => !isNaN(num));
-            // Llenar los campos td con los valores del array
+            // Llena los campos td con los valores del array
             for (let i = 0; i < datosConsulta.length; i++) {
                 const campoId = 'campo' + (i + 1); // Los IDs están numerados de campo1 a campo12
                 const campo = document.getElementById(campoId);
@@ -26,6 +32,8 @@ function llenarGrafica(select) {
                     campo.textContent = datosConsulta[i].toString();
                 }
             }
+
+            // Configura y crea un nuevo gráfico utilizando la biblioteca Chart.js
             const ctx = document.getElementById('myChart').getContext('2d');
             myChart = new Chart(ctx, {
                 type: 'line', // Tipo de gráfico (en este caso, de línea)
@@ -33,7 +41,7 @@ function llenarGrafica(select) {
                     labels: ['DGV', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'R', 'A', ' '], // Etiquetas para el eje X
                     datasets: [{
                         label: 'RESULTADOS',
-                        data: datosConsulta,  // Usamos los datos obtenidos de la consulta
+                        data: datosConsulta,  // Utiliza los datos obtenidos de la consulta
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         borderColor: 'rgba(255, 99, 132, 1)',
                         borderWidth: 1
@@ -54,6 +62,7 @@ function llenarGrafica(select) {
             console.error('Error', error);
         });
 }
+
 
 
 // Función para establecer el fondo blanco en el canvas
@@ -120,9 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function llenarCbo() {
     const cbo = document.getElementById("pruebas");
-    const cbofi = cbo-1;
+    const cbofi = cbo - 1;
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
-    fetch("http://localhost:8085/apiPrue/prueba"+"/"+documentoSeleccionado, {
+    fetch("http://localhost:8085/apiPrue/prueba" + "/" + documentoSeleccionado, {
         method: 'GET'
     })
         .then(response => response.json())
