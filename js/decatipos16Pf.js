@@ -76,7 +76,7 @@ async function guardarpf16() {
         decaValues[i - 1] = element.value;
         console.log(decaValues[i - 1]);
     }
-    await fetch("http://localhost:8085/apiPf/saveRes", {
+    await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/saveRes", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"

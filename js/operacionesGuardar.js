@@ -36,7 +36,7 @@ async function guardar5() {
         var respRes = document.getElementById(idPregunta).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
-        await fetch("http://localhost:8085/apiRes/saveRes", {
+        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -106,7 +106,7 @@ async function validarSeccion5() {
 function asignarValor() {
 
 
-    fetch('http://localhost:8085/apiRes/' + valorLocalStorage, {
+    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/' + valorLocalStorage, {
         method: 'GET'
     })
         .then(response => response.json())
@@ -1431,7 +1431,7 @@ function decA() {
 // Función para guardar los resultados de la prueba
 function guardarPrueba() {
     // Realiza una solicitud POST para guardar los resultados en la API
-    fetch("http://localhost:8085/apiPrue/saveRes", {
+    fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPrue/saveRes", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"

@@ -2,7 +2,7 @@
 const documentoinstructor = localStorage.getItem("documentoinstructor");
 
 // Realizar una solicitud GET al servidor para obtener datos del instructor
-fetch('http://localhost:8085/apiIns/' + documentoinstructor, {
+fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/' + documentoinstructor, {
   method: 'GET'
 })
   .then(response => response.json())
@@ -82,7 +82,7 @@ async function actualizarDatos() {
 
   try {
     // Enviar una solicitud PUT al servidor para actualizar los datos del instructor
-    const response = await fetch("http://localhost:8085/apiIns/" + documentoinstructor, {
+    const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/" + documentoinstructor, {
       method: "PUT",
       body: JSON.stringify(data),
       headers: {

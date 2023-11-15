@@ -44,7 +44,7 @@ async function generarCodigos() {
 
 async function existeEnBaseDeDatos(numeroAleatorio) {
     try {
-        const response = await fetch('http://localhost:8085/apiCita/Cod', { // esto verifica si existe en la base de datos
+        const response = await fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/Cod', { // esto verifica si existe en la base de datos
             method: 'GET' //El tipo de request que va a hacer 
         });
         if (response.ok) {//verifica que todos los datos lleguen correctamente
@@ -129,7 +129,7 @@ function Cbo() {    // Obtener el valor seleccionado del elemento con el id "cbo
 async function enviarRegistros() {
 
     for (let index = 0; index < nombres.length; index++) { //Se coloca nombres.length para que solo se haga hasta el número de aprendices
-        const response = await fetch("http://localhost:8085/apiApe/save", {
+        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiApe/save", {
             method: "POST",
             body: JSON.stringify({
                 "docApe": documentos[index], //se manda uno por uno del documento
@@ -163,7 +163,7 @@ async function asginarPrueba() {
     var docIns = localStorage.getItem("datos");// Obtener el documento del instructor almacenado en el localStorage
 
     for (let index = 0; index < nombres.length; index++) {// Iterar sobre los nombres y realizar operaciones para cada índice
-        const response = await fetch("http://localhost:8085/apiCita/save", {        // Enviar una solicitud POST al servidor para guardar datos
+        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/save", {        // Enviar una solicitud POST al servidor para guardar datos
 
             method: "POST",
             body: JSON.stringify({

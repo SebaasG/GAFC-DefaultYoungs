@@ -20,7 +20,7 @@ async function verificar() {
 
     try {
         // Realizar una solicitud GET al servidor para verificar la existencia del aprendiz
-        const response = await fetch('http://localhost:8085/apiApe/' + docApe, {
+        const response = await fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiApe/' + docApe, {
             method: 'GET'
         });
 
@@ -99,7 +99,7 @@ async function generarcod() {
     }
 
     // Enviar una solicitud POST al servidor para guardar la cita del aprendiz
-    const response = await fetch("http://localhost:8085/apiCita/save", {
+    const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/save", {
         method: "POST",
         body: JSON.stringify({
             "docApe": docApe,
@@ -187,7 +187,7 @@ function GuardarApe() {
 
     try {
         // Enviar una solicitud POST al servidor para guardar los datos del aprendiz
-        const response = fetch("http://localhost:8085/apiApe/save", {
+        const response = fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiApe/save", {
             method: "POST",
             body: JSON.stringify({
                 "docApe": docApe,
@@ -210,7 +210,7 @@ function GuardarApe() {
 async function existeEnBaseDeDatos(numeroAleatorio) {
     try {
         // Realizar una solicitud GET al servidor para obtener la lista de números de la base de datos
-        const response = await fetch('http://localhost:8085/apiCita/Cod', {
+        const response = await fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/Cod', {
             method: 'GET'
         });
 

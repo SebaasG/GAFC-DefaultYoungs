@@ -12,7 +12,7 @@ btn.addEventListener("click", function () {
     var estado = 1;
     
     // Enviar una solicitud POST al servidor con los datos del instructor
-    fetch('http://localhost:8085/apiIns/save', {
+    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/save', {
         method: 'POST',
         body: JSON.stringify({
             "docIns": docIns,
