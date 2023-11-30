@@ -22,7 +22,7 @@ function llenarGraficaPf(select) {
     limpiarCampos();
 
     // FETCH PARA TRAER LOS PUNTAJES DIRECTOS DE LA BASE DE DATOS SEGÚN EL APRENDIZ
-    fetch('http://localhost:8085/apiPf/directo/' + documentoSeleccionado + "/" + cbof, {
+    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/directo/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
         .then(response => response.text())
@@ -48,7 +48,7 @@ function llenarGraficaPf(select) {
         });
 
     // FETCH PARA TRAER LOS PUNTAJES FINALES DEL APRENDIZ SI ES QUE LOS TIENE 
-    fetch('http://localhost:8085/apiPf/final/' + documentoSeleccionado + "/" + cbof, {
+    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/final/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
         .then(response => response.text())
@@ -170,7 +170,7 @@ function restoreBackground() {
 function llenarCbo() {
     const cbo = document.getElementById("pruebas");
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
-    fetch("http://localhost:8085/apiPf/prueba/" + documentoSeleccionado, {
+    fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/prueba/" + documentoSeleccionado, {
         method: 'GET'
     })
         .then(response => response.json())

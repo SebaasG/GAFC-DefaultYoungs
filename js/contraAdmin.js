@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(contra);
 
         // Realizar una solicitud GET al servidor para verificar las credenciales del instructor
-        fetch('http://localhost:8085/apiIns/admin/' + docIns + '/' + contra, {
+        fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/admin/' + docIns + '/' + contra, {
             method: 'GET'
         })
             .then(response => {

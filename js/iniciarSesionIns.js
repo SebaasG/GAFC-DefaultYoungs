@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(docIns);
         console.log(contra);
 
-        fetch('http://localhost:8085/apiIns/' + docIns + '/' + contra, {
+        fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/' + docIns + '/' + contra, {
             method: 'GET'
         })
         .then(response => {
