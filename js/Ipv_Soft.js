@@ -6,8 +6,9 @@ async function guardar1() {
         var respRes = document.getElementById(idPregunta).value; // Trae el valor de la pregunta
         var docApe = localStorage.getItem("datos"); //Trae y guarda el valor que esta en el localStorage 
         var codPro = 1;//Se asigna el tipo de proceso al que pertenece
+        console.log(idPregunta,numPreRes,respRes,docApe,codPro);
         try {
-            await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", { //Enviar la respuesta a la API
+            await fetch("http://localhost:8085/apiRes/saveRes", { //Enviar la respuesta a la API
                 method: "POST",
                 body: JSON.stringify({
                     "numPreRes": numPreRes,
@@ -32,7 +33,7 @@ async function guardar2() {
         var respRes = document.getElementById(idPregunta).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -54,7 +55,7 @@ async function guardar3() {
         var respRes = document.getElementById(idPregunta).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -125,7 +126,7 @@ async function validarSeccion1() {
         }
     }
     await guardar1();
-    // location.href = 'Seccion2.html'; 
+
     var nuevaPestana = window.open("Seccion2.html", "_blank");
 
     setTimeout(function () {
@@ -185,6 +186,7 @@ async function validarSeccion4() {
             return;
         }
     }
+    await guardar4();
     var nuevaPestana = window.open("Seccion5.html", "_blank");
 
     setTimeout(function () {
