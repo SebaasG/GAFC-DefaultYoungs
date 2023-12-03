@@ -56,26 +56,26 @@ async function validarSeccion5() {
         'pregunta75', 'pregunta76', 'pregunta77', 'pregunta78', 'pregunta79', 'pregunta80',
         'pregunta81', 'pregunta82', 'pregunta83', 'pregunta84', 'pregunta85', 'pregunta86', 'pregunta87'];
 
-    // for (var i = 0; i < preguntas.length; i++) {
-    //     var pregunta = document.getElementById(preguntas[i]);
-    //     if (pregunta.value == 0) {
-    //         pregunta.focus();
-    //         Swal.fire({
-    //             position: 'center',
-    //             allowOutsideClick: false,
-    //             allowEscapeKey: false,
-    //             allowEnterKey: false,
-    //             stopKeydownPropagation: true,
-    //             title: '¡ ERROR !',
-    //             html: '<b class="texto-alerta"> ¡Por favor, rellene los campos y que son obligatorios! </b>',
-    //             icon: 'error',
-    //             iconColor: '#0e810e',
-    //             confirmButtonColor: '#0e810e',
-    //             timer: 8000
-    //         });
-    //         return;
-    //     }
-    // }
+    for (var i = 0; i < preguntas.length; i++) {
+        var pregunta = document.getElementById(preguntas[i]);
+        if (pregunta.value == 0) {
+            pregunta.focus();
+            Swal.fire({
+                position: 'center',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                stopKeydownPropagation: true,
+                title: '¡ ERROR !',
+                html: '<b class="texto-alerta"> ¡Por favor, rellene los campos y que son obligatorios! </b>',
+                icon: 'error',
+                iconColor: '#0e810e',
+                confirmButtonColor: '#0e810e',
+                timer: 8000
+            });
+            return;
+        }
+    }
 
     await guardar5();
     await asignarValor();
@@ -94,10 +94,10 @@ async function validarSeccion5() {
     });
 
     setTimeout(() => {
-        // var nuevaPestana = window.open("../index.html", "_blank");
+        var nuevaPestana = window.open("../index.html", "_blank");
 
         setTimeout(function () {
-            // window.open('about:blank', '_self').close();
+            window.open('about:blank', '_self').close();
         }, 2);
     }, 3000);
 }
