@@ -1,9 +1,7 @@
 // Obtener el documento del instructor almacenado en el localStorage
 const documentoinstructor = localStorage.getItem("documentoinstructor");
-
-// Realizar una solicitud GET al servidor para obtener datos del instructor
-fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/' + documentoinstructor, {
-  method: 'GET'
+ fetch('http://localhost:8085/apiIns/' + documentoinstructor, {
+    method: 'GET'
 })
   .then(response => response.json())
   .then(data => {
@@ -81,14 +79,13 @@ async function actualizarDatos() {
   };
 
   try {
-    // Enviar una solicitud PUT al servidor para actualizar los datos del instructor
-    const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/" + documentoinstructor, {
-      method: "PUT",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    });
+      const response = await fetch("http://localhost:8085/apiIns/" + documentoinstructor, {
+          method: "PUT",
+          body: JSON.stringify(data),
+          headers: {
+              "Content-Type": "application/json"
+          }
+      });
 
     // Verificar si la respuesta del servidor es exitosa (código 2xx)
     if (response.ok) {

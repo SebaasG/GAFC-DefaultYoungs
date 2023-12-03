@@ -44,8 +44,8 @@ async function generarCodigos() {
 
 async function existeEnBaseDeDatos(numeroAleatorio) {
     try {
-        const response = await fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/Cod', { // esto verifica si existe en la base de datos
-            method: 'GET' //El tipo de request que va a hacer 
+        const response = await fetch('http://localhost:8085/apiCita/Cod', {
+            method: 'GET'
         });
         if (response.ok) {//verifica que todos los datos lleguen correctamente
             const data = await response.json();//Guarda la respuesta en una variable
@@ -128,8 +128,9 @@ function Cbo() {    // Obtener el valor seleccionado del elemento con el id "cbo
 //Funcion para guardar los datos que viene en el archivo csv
 async function enviarRegistros() {
 
-    for (let index = 0; index < nombres.length; index++) { //Se coloca nombres.length para que solo se haga hasta el número de aprendices
-        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiApe/save", {
+
+    for (let index = 0; index < nombres.length; index++) {
+        const response = await fetch("http://localhost:8085/apiApe/save", {
             method: "POST",
             body: JSON.stringify({
                 "docApe": documentos[index], //se manda uno por uno del documento
@@ -159,12 +160,9 @@ async function asginarPrueba() {
         // Si no se han generado todos los números, salir de la función
         return;
     }
-
-    var docIns = localStorage.getItem("datos");// Obtener el documento del instructor almacenado en el localStorage
-
-    for (let index = 0; index < nombres.length; index++) {// Iterar sobre los nombres y realizar operaciones para cada índice
-        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/save", {        // Enviar una solicitud POST al servidor para guardar datos
-
+    var docIns = localStorage.getItem("datos");
+    for (let index = 0; index < nombres.length; index++) {
+        const response = await fetch("http://localhost:8085/apiCita/save", {
             method: "POST",
             body: JSON.stringify({
                 // Datos a enviar en el cuerpo de la solicitud

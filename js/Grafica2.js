@@ -21,8 +21,8 @@ function llenarGraficaPf(select) {
     // Limpia los campos antes de cargar la gráfica
     limpiarCampos();
 
-    // FETCH PARA TRAER LOS PUNTAJES DIRECTOS DE LA BASE DE DATOS SEGÚN EL APRENDIZ
-    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/directo/' + documentoSeleccionado + "/" + cbof, {
+    //FETCH PARA TRAER LOS PUNTAJES DIRECTOS DE LA BASE DE DATOS SEGUN EL APRENDIZ
+    fetch('http://localhost:8085/apiPf/directo/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
         .then(response => response.text())
@@ -47,8 +47,8 @@ function llenarGraficaPf(select) {
             console.error('Error en la solicitud HTTP:', error);
         });
 
-    // FETCH PARA TRAER LOS PUNTAJES FINALES DEL APRENDIZ SI ES QUE LOS TIENE 
-    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/final/' + documentoSeleccionado + "/" + cbof, {
+    //FETCH PARA TRAER LO PUNTAJES FINALES DEL APRENDIZ SI ES QUE LOS TIENE 
+    fetch('http://localhost:8085/apiPf/final/' + documentoSeleccionado + "/" + cbof, {
         method: 'GET'
     })
         .then(response => response.text())
