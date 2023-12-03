@@ -100,7 +100,7 @@ async function validarSeccionP9() {
 
 function asignarValorPf() {
 
-    fetch('http://localhost:8085/apiRes/2/' + valorLocalStorage, {
+    fetch('http://localhost:8085/apiRes/2/'+ valorLocalStorage, {
         method: 'GET'
     })
         .then(response => response.json())
@@ -1987,7 +1987,7 @@ async function opc() {
     console.log(Q4);
     Q5 = pregunta20 + pregunta39 + pregunta58 + pregunta77 + pregunta95 + pregunta96 + pregunta114 + pregunta133 + pregunta152 + pregunta171;
     console.log(Q5);
-    await guardarPrueb();
+    await guardarPruebaPf();
 }
 
 
@@ -2041,6 +2041,7 @@ const btn1 = document.getElementById("SeccionP9");
 btn1.addEventListener("click", async function () {
     // Espera la validación de la Sección P9 antes de ejecutar la función para guardar la prueba Pf
     await validarSeccionP9();
+
 });
 
 

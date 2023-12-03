@@ -120,9 +120,12 @@ async function guardarpf16() {
                     timer: 8000
                 });
                 setTimeout(() => {
-                    location.href = 'grafica2.html';
-                    location.reload();
-                }, 1000);
+                    var nuevaPestana = window.open("grafica2.html", "_blank");
+            
+                    setTimeout(function () {
+                        window.open('about:blank', '_self').close();
+                    }, 2);
+                }, 3000);
             }
 
         })
