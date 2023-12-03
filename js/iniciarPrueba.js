@@ -4,7 +4,7 @@ const btn = document.getElementById("btnCode");
 btn.addEventListener("click", function () {
     const code = codeInput.value;
 
-    fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/' + code, {
+    fetch('http://localhost:8085/apiCita/' + code, {
         method: 'GET'
     })
     .then(response => {

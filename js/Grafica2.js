@@ -170,7 +170,7 @@ function restoreBackground() {
 function llenarCbo() {
     const cbo = document.getElementById("pruebas");
     const documentoSeleccionado = localStorage.getItem("documentoSeleccionado");
-    fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiPf/prueba/" + documentoSeleccionado, {
+    fetch("http://localhost:8085/apiPf/prueba/" + documentoSeleccionado, {
         method: 'GET'
     })
         .then(response => response.json())

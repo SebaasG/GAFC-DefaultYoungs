@@ -7,7 +7,7 @@ async function guardar1() {
         var codPro = 1;
 
         try {
-            await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+            await fetch("http://localhost:8085/apiRes/saveRes", {
                 method: "POST",
                 body: JSON.stringify({
                     "numPreRes": numPreRes,
@@ -35,7 +35,7 @@ async function guardar2() {
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
 
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -60,7 +60,7 @@ async function guardar3() {
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
 
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -85,7 +85,7 @@ async function guardar4() {
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
 
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -109,7 +109,7 @@ async function guardarp1() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -132,7 +132,7 @@ async function guardarp2() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -155,7 +155,7 @@ async function guardarp2() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -178,7 +178,7 @@ async function guardarp3() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -201,7 +201,7 @@ async function guardarp4() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -224,7 +224,7 @@ async function guardarp5() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -247,7 +247,7 @@ async function guardarp6() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -269,7 +269,7 @@ async function guardarp7() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,
@@ -291,7 +291,7 @@ async function guardarp8() {
         var respRes = document.getElementById(idPreguntaP).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 2;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,

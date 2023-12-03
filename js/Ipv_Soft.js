@@ -77,7 +77,7 @@ async function guardar4() {
         var respRes = document.getElementById(idPregunta).value;
         var docApe = localStorage.getItem("datos");
         var codPro = 1;
-        await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiRes/saveRes", {
+        await fetch("http://localhost:8085/apiRes/saveRes", {
             method: "POST",
             body: JSON.stringify({
                 "numPreRes": numPreRes,

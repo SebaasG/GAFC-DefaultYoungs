@@ -39,7 +39,7 @@ const initDataTable = async () => {
 
 const listUsers = async () => {
     try {
-        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/datos");
+        const response = await fetch("http://localhost:8085/apiCita/datos");
         if (!response.ok) {
             throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
         }

@@ -44,7 +44,7 @@ const initDataTable = async () => {
 
 const listUsers = async () => {
     try {
-        const response = await fetch("http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiIns/get");
+        const response = await fetch("http://localhost:8085/apiIns/get");
         const instructores = await response.json();
         let content = ``;
 

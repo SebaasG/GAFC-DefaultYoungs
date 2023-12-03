@@ -5,7 +5,7 @@ const prueba1 = document.getElementById('sel1');
 const prueba2 = document.getElementById('sel2');
 
 // Realiza una solicitud GET a la API para obtener datos relacionados con la prueba
-fetch('http://localhost:8085/gafc-0.0.1-SNAPSHOT/apiCita/prueba/' + valorLocalStorage, {
+fetch('http://localhost:8085/apiCita/prueba/' + valorLocalStorage, {
     method: 'GET'
 })
     .then(response => response.json()) // Convierte la respuesta a formato JSON
