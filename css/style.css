@@ -28,13 +28,6 @@ body, html {
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   } */
-  .bodyequipo{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   background: #e1f3e1;
-  }
 
   .team {
     display: flex;
@@ -51,7 +44,7 @@ body, html {
     height: 447px; 
     box-sizing: border-box;
     margin-top: -160px;
-    background-color: #e1f3e1;
+    backdrop-filter: blur(22px);
     }
     
   .member img {
@@ -63,6 +56,13 @@ body, html {
   h1 {
     text-align: center;
     margin-top: 100px;
+  }
+  h2{
+    color: #ffffff;
+  }
+
+  p{
+    color: #ffffff;
   }
     
 .form-register {
