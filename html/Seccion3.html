@@ -19,401 +19,422 @@
 
     <div class="container">
         <div class="sidebar">
-            <button class="botonSeccion" >Sección 1</button>
-            <button class="botonSeccion" >Sección 2</button>
+            <button id="Sec1" class="botonSeccion">
+                <script>
+                    Sec1.disabled = true;
+                    Sec1.style.color = "#999";
+                </script>Sección 1
+            </button>
+            <button id="Sec2" class="botonSeccion">
+                <script>
+                    Sec2.disabled = true;
+                    Sec2.style.color = "#999";
+                </script>Sección 2
+            </button>
             <button class="botonSeccion" onclick="location.href='Seccion3.html'">Sección 3</button>
-            <button class="botonSeccion" >Sección 4</button>
-            <button class="botonSeccion" >Sección 5</button>
+            <button id="Sec4" class="botonSeccion">
+                <script>
+                    Sec4.disabled = true;
+                    Sec4.style.color = "#999";
+                </script>Sección 4
+            </button>
+            <button id="Sec5" class="botonSeccion">
+                <script>
+                    Sec5.disabled = true;
+                    Sec5.style.color = "#999";
+                </script>Sección 5
+            </button>
         </div>
+    </div>
 
-        <div class="section">
-            <ul>
+    <div class="section">
+        <ul>
 
-                <!-- Pregunta 35 -->
-                <li>
-                    <p>35 ¿Cuál es, a su modo de ver, la mejor manera de descansar durante el fin de semana para un
-                        hombre que trabaja todos los demás días?:</p>
-                    <div class="question">
-                        <span class="question-text">A. Reunirse con los amigos.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Ir al cine.</span>
-                        <select id="pregunta35" class="combo-box12" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Leer.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 36 -->
-                <li>
-                    <p>36 Si usted dispusiera de un año de libertad y de los medios necesarios para hacer lo que
-                        quisiera, ¿cuál elegiría entre los actividades siguientes?</p>
-                    <div class="question">
-                        <span class="question-text">A. Dar la vuelta al mundo en solitario a bordo de un velero.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Participar en una carrera automovilística Madrid-Bombay.</span>
-                        <select id="pregunta36" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Visitar el mayor número posible de países.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 37 -->
-                <li>
-                    <p>37 Un empleado administrativo, incorporado recientemente a la empresa, pide a X..., uno de sus
-                        compañeros, que le preste una pequeña suma de dinero hasta el mes siguiente. ¿Qué hará X...?</p>
-                    <div class="question">
-                        <span class="question-text">A. Le prestará el dinero sin hacerle ninguna pregunta para no
-                            ponerle en un aprieto.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Le prestará el dinero porque a él le gustaría que le hicieran lo
-                            mismo si lo necesitara.</span>
-                        <select id="pregunta37" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. No le dará el dinero; considerando que su compañero tiene,
-                            probablemente, buenos amigos dispuestos a ayudarle.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 38 -->
-                <li>
-                    <p>38 B... se ha puesto, sin quererlo, fuera de la legalidad y debe escoger a un abogado para que le
-                        defienda. ¿Sobre cuál de los criterios siguientes basará su elección?</p>
-                    <div class="question">
-                        <span class="question-text">A. Su reputación de elocuencia.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Sus buenas relaciones con la magistratura.</span>
-                        <select id="pregunta38" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Su perspicacia psicológica.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 39 -->
-                <li>
-                    <p>39 E... ha sido nombrado recientemente para un puesto que implica responsabilidades jerárquicas
-                        importantes. ¿Qué actitud tomará probablemente frente a sus subordinados?</p>
-                    <div class="question">
-                        <span class="question-text">A. Modificar su forma de mandar según las personas y las
-                            circunstancias.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Fijarse un sistema de mando bien elaborado e idéntico para
-                            todos.</span>
-                        <select id="pregunta39" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Basándose en la experiencia, dejarse guiar por su
-                            intuición.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 40 -->
-                <li>
-                    <p>40 R... tiene que hablar sobre informática a empleados que no tienen ningún conocimiento en este
-                        campo ¿Cuál de las siguientes alternativas le planteará menos problemas?</p>
-                    <div class="question">
-                        <span class="question-text">A. Utilizar un vocabulario comprensible para todo el mundo.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Interesar al auditorio y mantener su atención.</span>
-                        <select id="pregunta40" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Hacer participar a todos los asistentes.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 41 -->
-                <li>
-                    <p>41 L... asiste a un partido de fútbol entre dos equipos muy conocidos. El partido es muy
-                        disputado y los dos equipos rinden al máximo. Entre los espectadores el entusiasmo es tremendo:
-                    </p>
-                    <div class="question">
-                        <span class="question-text">A. L... se contenta con aplaudir las jugadas más brillantes.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. L... es dominado por la agitación general: grita y gesticula como
-                            los otros.</span>
-                        <select id="pregunta41" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. L... discute con sus vecinos sobre los jugadas de los
-                            futbolistas.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 42 -->
-                <li>
-                    <p>42 B... atraviesa la calle por un paso de peatones con el semáforo en rojo. Un coche llega a gran
-                        velocidad y se detiene repentinamente a pocos centímetros de B. ¿Cuál va a ser la reacción
-                        inmediata de éste?</p>
-                    <div class="question">
-                        <span class="question-text">A. Hará una observación irónica al mismo tiempo que maldice
-                            interiormente al conductor.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Dará airadamente su opinión al conductor sobre su manera de
-                            conducir.</span>
-                        <select id="pregunta42" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Lanzará al conductor algunos insultos que no puede
-                            reprimir.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 43 -->
-                <li>
-                    <p>43 A su modo de ver, ¿cuál es, entre los siguientes, aspectos, el más desatendido actualmente en
-                        la educación de su hijo?</p>
-                    <div class="question">
-                        <span class="question-text">A. La aceptación de responsabilidades.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. El gusto por el trabajo bien hecho.</span>
-                        <select id="pregunta43" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. La capacidad para desenvolverse solo rápidamente.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 44 -->
-                <li>
-                    <p>44 T... acaba de fracasar en un examen. Uno de sus amigos le dice que algunos fracasos son útiles
-                        en la vida ¿Qué responderá él?</p>
-                    <div class="question">
-                        <span class="question-text">A. “Se ve que no estás en mi lugar; yo preferiría no pasar por
-                            esto”.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. “Puede que tengas razón”.</span>
-                        <select id="pregunta44" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. “Admite, por lo menos, que cuando ocurre es difícil de
-                            aceptar”.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 45 -->
-                <li>
-                    <p>45 L... se encuentra en una reunión amistosa. Sabe muy bien que la mayor parte de las personas
-                        presentes tienen opiniones muy diferentes a las suyas ¿Qué piensa usted que hará?</p>
-                    <div class="question">
-                        <span class="question-text">A. Evitar toda discusión.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Provocar la discusión.</span>
-                        <select id="pregunta45" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Dar su opinión si no puede evitarlo.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 46 -->
-                <li>
-                    <p>46 ¿Qué cualidad le parece más útil en las relaciones sociales?</p>
-                    <div class="question">
-                        <span class="question-text">A. La tolerancia.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. La sinceridad.</span>
-                        <select id="pregunta46" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. La aceptación de compromisos.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 47 -->
-                <li>
-                    <p>47 M... acaba de modificar totalmente su apartamento. Invita a sus amigos a la inauguración.
-                        Entre los cumplidos que le hagan, ¿cuál será para él el más agradable?</p>
-                    <div class="question">
-                        <span class="question-text">A. Una felicitación sobre su buen gusto.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Un elogio sobre la forma en que ha sacado partido de la
-                            disposición de las habitaciones.</span>
-                        <select id="pregunta47" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Una alabanza a su originalidad, porque su decoración no se parece
-                            a ninguna otra ya vista.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 48 -->
-                <li>
-                    <p>48 S... llega en el momento de una discusión entre dos personas a las que conoce poco. El tema
-                        del que hablan, muy específico, le es totalmente desconocido y apenas le interesa. ¿Cuál será su
-                        reacción?</p>
-                    <div class="question">
-                        <span class="question-text">A. Interviene para informarse, aún a riesgo de parecer
-                            ignorante.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Trata de interesarse porque no quiere parecer incorrecto.</span>
-                        <select id="pregunta48" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. No interviene, porque no puede aportar un punto de vista
-                            interesante sobre el asunto.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 49 -->
-                <li>
-                    <p>49 R... llega con retraso a una reunión de copropietarios. ¿Qué es lo que probablemente le
-                        molestará más?</p>
-                    <div class="question">
-                        <span class="question-text">A. La idea de que hayan podido aprovecharse de su ausencia para
-                            tomar una decisión con la que él no esté de acuerdo.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. El temor de tener dificultad para integrarse en la
-                            discusión.</span>
-                        <select id="pregunta49" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. La perspectiva de parecer descortés.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 50 -->
-                <li>
-                    <p>50 Se ha pedido a F... un informe lo más objetivo posible sobre su modo de ser. ¿Quién decidirá
-                        el que lo haga?</p>
-                    <div class="question">
-                        <span class="question-text">A. Su mujer.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Un grupo de amigos.</span>
-                        <select id="pregunta50" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. El mismo.</span>
-                    </div>
-                </li>
-
-                <!-- Pregunta 51 -->
-                <li>
-                    <p>51 X... quiere construir una casa. ¿Cuál de las siguientes soluciones elegirá?</p>
-                    <div class="question">
-                        <span class="question-text">A. Llamar a un arquitecto.</span>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">B. Hacer los planos él mismo y trabajar directamente con un
-                            constructor.</span>
-                        <select id="pregunta51" class="combo-box" required>
-                            <option value="0" disabled selected="">...</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                        </select>
-                    </div>
-                    <div class="question">
-                        <span class="question-text">C. Hacer los planos con un amigo que acaba de hacer una casa.</span>
-                    </div>
-                </li>
-                <div>
-
-                    <button id="Seccion3" class="next-button" onclick="validarSeccion3()">
-                        <span> Siguiente Seccion </span>
-
-                    </button>
+            <!-- Pregunta 35 -->
+            <li>
+                <p>35 ¿Cuál es, a su modo de ver, la mejor manera de descansar durante el fin de semana para un
+                    hombre que trabaja todos los demás días?:</p>
+                <div class="question">
+                    <span class="question-text">A. Reunirse con los amigos.</span>
                 </div>
-            </ul>
+                <div class="question">
+                    <span class="question-text">B. Ir al cine.</span>
+                    <select id="pregunta35" class="combo-box12" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Leer.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 36 -->
+            <li>
+                <p>36 Si usted dispusiera de un año de libertad y de los medios necesarios para hacer lo que
+                    quisiera, ¿cuál elegiría entre los actividades siguientes?</p>
+                <div class="question">
+                    <span class="question-text">A. Dar la vuelta al mundo en solitario a bordo de un velero.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Participar en una carrera automovilística Madrid-Bombay.</span>
+                    <select id="pregunta36" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Visitar el mayor número posible de países.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 37 -->
+            <li>
+                <p>37 Un empleado administrativo, incorporado recientemente a la empresa, pide a X..., uno de sus
+                    compañeros, que le preste una pequeña suma de dinero hasta el mes siguiente. ¿Qué hará X...?</p>
+                <div class="question">
+                    <span class="question-text">A. Le prestará el dinero sin hacerle ninguna pregunta para no
+                        ponerle en un aprieto.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Le prestará el dinero porque a él le gustaría que le hicieran lo
+                        mismo si lo necesitara.</span>
+                    <select id="pregunta37" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. No le dará el dinero; considerando que su compañero tiene,
+                        probablemente, buenos amigos dispuestos a ayudarle.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 38 -->
+            <li>
+                <p>38 B... se ha puesto, sin quererlo, fuera de la legalidad y debe escoger a un abogado para que le
+                    defienda. ¿Sobre cuál de los criterios siguientes basará su elección?</p>
+                <div class="question">
+                    <span class="question-text">A. Su reputación de elocuencia.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Sus buenas relaciones con la magistratura.</span>
+                    <select id="pregunta38" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Su perspicacia psicológica.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 39 -->
+            <li>
+                <p>39 E... ha sido nombrado recientemente para un puesto que implica responsabilidades jerárquicas
+                    importantes. ¿Qué actitud tomará probablemente frente a sus subordinados?</p>
+                <div class="question">
+                    <span class="question-text">A. Modificar su forma de mandar según las personas y las
+                        circunstancias.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Fijarse un sistema de mando bien elaborado e idéntico para
+                        todos.</span>
+                    <select id="pregunta39" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Basándose en la experiencia, dejarse guiar por su
+                        intuición.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 40 -->
+            <li>
+                <p>40 R... tiene que hablar sobre informática a empleados que no tienen ningún conocimiento en este
+                    campo ¿Cuál de las siguientes alternativas le planteará menos problemas?</p>
+                <div class="question">
+                    <span class="question-text">A. Utilizar un vocabulario comprensible para todo el mundo.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Interesar al auditorio y mantener su atención.</span>
+                    <select id="pregunta40" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Hacer participar a todos los asistentes.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 41 -->
+            <li>
+                <p>41 L... asiste a un partido de fútbol entre dos equipos muy conocidos. El partido es muy
+                    disputado y los dos equipos rinden al máximo. Entre los espectadores el entusiasmo es tremendo:
+                </p>
+                <div class="question">
+                    <span class="question-text">A. L... se contenta con aplaudir las jugadas más brillantes.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. L... es dominado por la agitación general: grita y gesticula como
+                        los otros.</span>
+                    <select id="pregunta41" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. L... discute con sus vecinos sobre los jugadas de los
+                        futbolistas.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 42 -->
+            <li>
+                <p>42 B... atraviesa la calle por un paso de peatones con el semáforo en rojo. Un coche llega a gran
+                    velocidad y se detiene repentinamente a pocos centímetros de B. ¿Cuál va a ser la reacción
+                    inmediata de éste?</p>
+                <div class="question">
+                    <span class="question-text">A. Hará una observación irónica al mismo tiempo que maldice
+                        interiormente al conductor.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Dará airadamente su opinión al conductor sobre su manera de
+                        conducir.</span>
+                    <select id="pregunta42" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Lanzará al conductor algunos insultos que no puede
+                        reprimir.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 43 -->
+            <li>
+                <p>43 A su modo de ver, ¿cuál es, entre los siguientes, aspectos, el más desatendido actualmente en
+                    la educación de su hijo?</p>
+                <div class="question">
+                    <span class="question-text">A. La aceptación de responsabilidades.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. El gusto por el trabajo bien hecho.</span>
+                    <select id="pregunta43" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. La capacidad para desenvolverse solo rápidamente.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 44 -->
+            <li>
+                <p>44 T... acaba de fracasar en un examen. Uno de sus amigos le dice que algunos fracasos son útiles
+                    en la vida ¿Qué responderá él?</p>
+                <div class="question">
+                    <span class="question-text">A. “Se ve que no estás en mi lugar; yo preferiría no pasar por
+                        esto”.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. “Puede que tengas razón”.</span>
+                    <select id="pregunta44" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. “Admite, por lo menos, que cuando ocurre es difícil de
+                        aceptar”.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 45 -->
+            <li>
+                <p>45 L... se encuentra en una reunión amistosa. Sabe muy bien que la mayor parte de las personas
+                    presentes tienen opiniones muy diferentes a las suyas ¿Qué piensa usted que hará?</p>
+                <div class="question">
+                    <span class="question-text">A. Evitar toda discusión.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Provocar la discusión.</span>
+                    <select id="pregunta45" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Dar su opinión si no puede evitarlo.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 46 -->
+            <li>
+                <p>46 ¿Qué cualidad le parece más útil en las relaciones sociales?</p>
+                <div class="question">
+                    <span class="question-text">A. La tolerancia.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. La sinceridad.</span>
+                    <select id="pregunta46" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. La aceptación de compromisos.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 47 -->
+            <li>
+                <p>47 M... acaba de modificar totalmente su apartamento. Invita a sus amigos a la inauguración.
+                    Entre los cumplidos que le hagan, ¿cuál será para él el más agradable?</p>
+                <div class="question">
+                    <span class="question-text">A. Una felicitación sobre su buen gusto.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Un elogio sobre la forma en que ha sacado partido de la
+                        disposición de las habitaciones.</span>
+                    <select id="pregunta47" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Una alabanza a su originalidad, porque su decoración no se parece
+                        a ninguna otra ya vista.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 48 -->
+            <li>
+                <p>48 S... llega en el momento de una discusión entre dos personas a las que conoce poco. El tema
+                    del que hablan, muy específico, le es totalmente desconocido y apenas le interesa. ¿Cuál será su
+                    reacción?</p>
+                <div class="question">
+                    <span class="question-text">A. Interviene para informarse, aún a riesgo de parecer
+                        ignorante.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Trata de interesarse porque no quiere parecer incorrecto.</span>
+                    <select id="pregunta48" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. No interviene, porque no puede aportar un punto de vista
+                        interesante sobre el asunto.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 49 -->
+            <li>
+                <p>49 R... llega con retraso a una reunión de copropietarios. ¿Qué es lo que probablemente le
+                    molestará más?</p>
+                <div class="question">
+                    <span class="question-text">A. La idea de que hayan podido aprovecharse de su ausencia para
+                        tomar una decisión con la que él no esté de acuerdo.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. El temor de tener dificultad para integrarse en la
+                        discusión.</span>
+                    <select id="pregunta49" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. La perspectiva de parecer descortés.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 50 -->
+            <li>
+                <p>50 Se ha pedido a F... un informe lo más objetivo posible sobre su modo de ser. ¿Quién decidirá
+                    el que lo haga?</p>
+                <div class="question">
+                    <span class="question-text">A. Su mujer.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Un grupo de amigos.</span>
+                    <select id="pregunta50" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. El mismo.</span>
+                </div>
+            </li>
+
+            <!-- Pregunta 51 -->
+            <li>
+                <p>51 X... quiere construir una casa. ¿Cuál de las siguientes soluciones elegirá?</p>
+                <div class="question">
+                    <span class="question-text">A. Llamar a un arquitecto.</span>
+                </div>
+                <div class="question">
+                    <span class="question-text">B. Hacer los planos él mismo y trabajar directamente con un
+                        constructor.</span>
+                    <select id="pregunta51" class="combo-box" required>
+                        <option value="0" disabled selected="">...</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <span class="question-text">C. Hacer los planos con un amigo que acaba de hacer una casa.</span>
+                </div>
+            </li>
+            <div>
+
+                <button id="Seccion3" class="next-button" onclick="validarSeccion3()">
+                    <span> Siguiente Seccion </span>
+
+                </button>
+            </div>
+        </ul>
 
 </body>
 

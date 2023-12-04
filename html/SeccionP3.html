@@ -1,478 +1,518 @@
 <!-- SeccionP3.html -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title> Sección 2. 3 </title>
 
-                <link rel="stylesheet" href="../css/Style A.css">
-                
-                <script src="../js/16Pf.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sección 2. 3 </title>
 
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/Style A.css">
 
-                </head>
-                <body>
-                    <div class="container">
-                        <div class="sidebar">
-                            <button class="botonSeccion1">Sección 1</button>
-                            <button class="botonSeccion1">Sección 2</button>
-                            <button class="botonSeccion1" onclick="location.href='SeccionP3.html'">Sección 3</button>
-                            <button class="botonSeccion1">Sección 4</button>
-                            <button class="botonSeccion1">Sección 5</button>
-                            <button class="botonSeccion1">Sección 6</button>
-                            <button class="botonSeccion1">Sección 7</button>
-                            <button class="botonSeccion1">Sección 8</button>
-                            <button class="botonSeccion1">Sección 9</button>
-                        </div>
+    <script src="../js/16Pf.js"></script>
 
-                        <div class="section">
-                            <ul>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-                                <!-- Pregunta 43 -->
-                                <li>
-                                    <p>43. Me siento desasosegado cuando trabajo en un proyecto que requiere una
-                                        acción rápida que afecta a los demás:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Verdadero</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP43" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Falso</span>
-                                    </div>
-                                </li>
+</head>
 
-                                <!-- Pregunta 44 -->
-                                <li>
-                                    <p>44. Indudablemente tengo menos amigos que la mayoría de las personas:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP44" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
+<body>
+    <div class="container">
+        <div class="sidebar">
 
-                                <!-- Pregunta 45 -->
-                                <li>
-                                    <p>45. Aborrecería tener que estar en un lugar donde hubiera poca gente con
-                                        quien hablar:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Verdadero</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP45" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Falso</span>
-                                    </div>
-                                </li>
+            <button id="SecP1" class="botonSeccion1">
+                <script>
+                    SecP1.disabled = true;
+                    SecP1.style.color = "#999";
+                </script>Sección 1
+            </button>
+            <button id="SecP2" class="botonSeccion1">
+                <script>
+                    SecP2.disabled = true;
+                    SecP2.style.color = "#999";
+                </script>Sección 2
+            </button>
+            <button class="botonSeccion1" onclick="location.href='SeccionP3.html'">Sección 3</button>
+            <button id="SecP4" class="botonSeccion1">
+                <script>
+                    SecP4.disabled = true;
+                    SecP4.style.color = "#999";
+                </script>Sección 4
+            </button>
+            <button id="SecP5" class="botonSeccion1">
+                <script>
+                    SecP5.disabled = true;
+                    SecP5.style.color = "#999";
+                </script>Sección 5
+            </button>
+            <button id="SecP6" class="botonSeccion1">
+                <script>
+                    SecP6.disabled = true;
+                    SecP6.style.color = "#999";
+                </script>Sección 6
+            </button>
+            <button id="SecP7" class="botonSeccion1">
+                <script>
+                    SecP7.disabled = true;
+                    SecP7.style.color = "#999";
+                </script>Sección 7
+            </button>
+            <button id="SecP8" class="botonSeccion1">
+                <script>
+                    SecP8.disabled = true;
+                    SecP8.style.color = "#999";
+                </script>Sección 8
+            </button>
+            <button id="SecP9" class="botonSeccion1">
+                <script>
+                    SecP9.disabled = true;
+                    SecP9.style.color = "#999";
+                </script>Sección 9
+            </button>
+        </div>
+        <div class="section">
+            <ul>
 
-                                <!-- Pregunta 46 -->
-                                <li>
-                                    <p>46. Creo que es más importante mucha libertad que buena educación y respeto a
-                                        la ley:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Verdadero</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP46" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Falso</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 47 -->
-                                <li>
-                                    <p>47. Siempre me alegra formar parte de un grupo grande, como una reunión, un
-                                        baile o una asamblea:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP47" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 48 -->
-                                <li>
-                                    <p>48. En mi época de estudiante me gustaba (me gusta):</p>
-                                    <div class="question">
-                                        <span class="question-text">A. La música</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP48" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. La actividad de tipo manual</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 49 -->
-                                <li>
-                                    <p>49. Si alguien se enfada conmigo:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Intento calmarle</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP49" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Me irrito con él</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 50 -->
-                                <li>
-                                    <p>50. Para los padres es más importante:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Ayudar a sus hijos a desarrollarse afectivamente</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP50" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Enseñarles a controlar sus emociones</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 51 -->
-                                <li>
-                                    <p>51. Siento de vez en cuando la necesidad de ocuparme en una actividad física
-                                        enérgica:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP51" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 52 -->
-                                <li>
-                                    <p>52. Hay veces en que no me siento con humor para ver a alguien:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Muy raramente</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP52" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Muy a menudo</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 53 -->
-                                <li>
-                                    <p>53. A veces los demás me advierten que yo muestro mi excitación demasiado
-                                        claramente en la voz y en los modales:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP53" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 54 -->
-                                <li>
-                                    <p>54. Lo que el mundo necesita es:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Ciudadanos más sensatos y constantes</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP54" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Más "idealistas" con proyectos para un mundo mejor</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 55 -->
-                                <li>
-                                    <p>55. Preferiría tener un negocio propio, no compartido con otra persona:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP55" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 56 -->
-                                <li>
-                                    <p>56. Tengo mi habitación organizada de un modo inteligente y estético, con las
-                                        cosas colocadas casi siempre en lugares conocidos:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP56" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 57 -->
-                                <li>
-                                    <p>57. En ocasiones dudo si la gente con quien estoy hablando se interesa
-                                        realmente por lo que digo:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Término medio</span>
-                                        <select id="preguntaP57" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 58 -->
-                                <li>
-                                    <p>58. Si tuviera que escoger, preferiría ser:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Guarda forestal</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP58" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Profesor de Enseñanza media</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 59 -->
-                                <li>
-                                    <p>59. ¿Cuál de las siguientes fracciones es diferente de las otras dos?:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. 3/7</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. 3/9</span>
-                                        <select id="preguntaP59" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. 3/11</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 60 -->
-                                <li>
-                                    <p>60. “Tamaño”. es a “longitud” como “delito” es a:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Prisión</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. Castigo</span>
-                                        <select id="preguntaP60" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Robo</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 61 -->
-                                <li>
-                                    <p>61. En mi vida personal consigo casi siempre todos mis propósitos:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Verdadero</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP61" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="selected">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. Falso</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 62 -->
-                                <li>
-                                    <p>62. Tengo algunas características en las que me siento claramente superior a
-                                        la mayor parte de la gente:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP62" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="selected">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <!-- Pregunta 63 -->
-                                <li>
-                                    <p>63. Solo asisto a actos sociales cuando estoy obligado, y me mantengo aparte
-                                        en las demás ocasiones:</p>
-                                    <div class="question">
-                                        <span class="question-text">A. Sí</span>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">B. No estoy seguro</span>
-                                        <select id="preguntaP63" class="combo-box" required="required">
-                                            <option value="0" disabled="disabled" selected="selected">...</option>
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                        </select>
-                                    </div>
-                                    <div class="question">
-                                        <span class="question-text">C. No</span>
-                                    </div>
-                                </li>
-
-                                <div>
-                                    <button
-                                        id="SeccionP3"
-                                        class="next-button"
-                                        onclick="validarSeccionP3()">
-                                        <span>
-                                            Siguiente Seccion
-                                        </span>
-                                    </button>
-                                </div>
-
-                            </ul>
-                        </div>
+                <!-- Pregunta 43 -->
+                <li>
+                    <p>43. Me siento desasosegado cuando trabajo en un proyecto que requiere una
+                        acción rápida que afecta a los demás:</p>
+                    <div class="question">
+                        <span class="question-text">A. Verdadero</span>
                     </div>
-                </body>
-            </html>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP43" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Falso</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 44 -->
+                <li>
+                    <p>44. Indudablemente tengo menos amigos que la mayoría de las personas:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP44" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 45 -->
+                <li>
+                    <p>45. Aborrecería tener que estar en un lugar donde hubiera poca gente con
+                        quien hablar:</p>
+                    <div class="question">
+                        <span class="question-text">A. Verdadero</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP45" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Falso</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 46 -->
+                <li>
+                    <p>46. Creo que es más importante mucha libertad que buena educación y respeto a
+                        la ley:</p>
+                    <div class="question">
+                        <span class="question-text">A. Verdadero</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP46" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Falso</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 47 -->
+                <li>
+                    <p>47. Siempre me alegra formar parte de un grupo grande, como una reunión, un
+                        baile o una asamblea:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP47" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 48 -->
+                <li>
+                    <p>48. En mi época de estudiante me gustaba (me gusta):</p>
+                    <div class="question">
+                        <span class="question-text">A. La música</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP48" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. La actividad de tipo manual</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 49 -->
+                <li>
+                    <p>49. Si alguien se enfada conmigo:</p>
+                    <div class="question">
+                        <span class="question-text">A. Intento calmarle</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP49" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Me irrito con él</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 50 -->
+                <li>
+                    <p>50. Para los padres es más importante:</p>
+                    <div class="question">
+                        <span class="question-text">A. Ayudar a sus hijos a desarrollarse afectivamente</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP50" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Enseñarles a controlar sus emociones</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 51 -->
+                <li>
+                    <p>51. Siento de vez en cuando la necesidad de ocuparme en una actividad física
+                        enérgica:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP51" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 52 -->
+                <li>
+                    <p>52. Hay veces en que no me siento con humor para ver a alguien:</p>
+                    <div class="question">
+                        <span class="question-text">A. Muy raramente</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP52" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Muy a menudo</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 53 -->
+                <li>
+                    <p>53. A veces los demás me advierten que yo muestro mi excitación demasiado
+                        claramente en la voz y en los modales:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP53" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 54 -->
+                <li>
+                    <p>54. Lo que el mundo necesita es:</p>
+                    <div class="question">
+                        <span class="question-text">A. Ciudadanos más sensatos y constantes</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP54" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Más "idealistas" con proyectos para un mundo mejor</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 55 -->
+                <li>
+                    <p>55. Preferiría tener un negocio propio, no compartido con otra persona:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP55" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 56 -->
+                <li>
+                    <p>56. Tengo mi habitación organizada de un modo inteligente y estético, con las
+                        cosas colocadas casi siempre en lugares conocidos:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP56" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 57 -->
+                <li>
+                    <p>57. En ocasiones dudo si la gente con quien estoy hablando se interesa
+                        realmente por lo que digo:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Término medio</span>
+                        <select id="preguntaP57" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 58 -->
+                <li>
+                    <p>58. Si tuviera que escoger, preferiría ser:</p>
+                    <div class="question">
+                        <span class="question-text">A. Guarda forestal</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP58" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Profesor de Enseñanza media</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 59 -->
+                <li>
+                    <p>59. ¿Cuál de las siguientes fracciones es diferente de las otras dos?:</p>
+                    <div class="question">
+                        <span class="question-text">A. 3/7</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. 3/9</span>
+                        <select id="preguntaP59" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. 3/11</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 60 -->
+                <li>
+                    <p>60. “Tamaño”. es a “longitud” como “delito” es a:</p>
+                    <div class="question">
+                        <span class="question-text">A. Prisión</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. Castigo</span>
+                        <select id="preguntaP60" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Robo</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 61 -->
+                <li>
+                    <p>61. En mi vida personal consigo casi siempre todos mis propósitos:</p>
+                    <div class="question">
+                        <span class="question-text">A. Verdadero</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP61" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. Falso</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 62 -->
+                <li>
+                    <p>62. Tengo algunas características en las que me siento claramente superior a
+                        la mayor parte de la gente:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP62" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <!-- Pregunta 63 -->
+                <li>
+                    <p>63. Solo asisto a actos sociales cuando estoy obligado, y me mantengo aparte
+                        en las demás ocasiones:</p>
+                    <div class="question">
+                        <span class="question-text">A. Sí</span>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">B. No estoy seguro</span>
+                        <select id="preguntaP63" class="combo-box" required="required">
+                            <option value="0" disabled="disabled" selected="selected">...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <span class="question-text">C. No</span>
+                    </div>
+                </li>
+
+                <div>
+                    <button id="SeccionP3" class="next-button" onclick="validarSeccionP3()">
+                        <span>
+                            Siguiente Seccion
+                        </span>
+                    </button>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
