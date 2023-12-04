@@ -28,6 +28,13 @@ body, html {
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   } */
+  .bodyequipo{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   background: #e1f3e1;
+  }
 
   .team {
     display: flex;
@@ -41,8 +48,9 @@ body, html {
     border: 2px solid black;
     border-radius: 10px;
     width: 289px; 
-    height: 350px; 
+    height: 447px; 
     box-sizing: border-box;
+    margin-top: -160px;
     background-color: #e1f3e1;
     }
     
